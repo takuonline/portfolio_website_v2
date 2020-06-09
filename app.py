@@ -1,9 +1,10 @@
 from website import app
-from website.fakenews_app.functions import text_process
+from website.fakenews_app.functions import text_process # just needs to be here 
 
 
 if __name__=="__main__":
 	
-	# .__module__ = "thing"
+
 
 	app.run(debug=True)
+
