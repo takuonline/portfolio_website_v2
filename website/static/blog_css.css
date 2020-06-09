@@ -1,0 +1,172 @@
+/* .blog-nav{
+    display: inline-block;
+    list-style-type: none;
+    overflow: hidden;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    position: relative;
+#ff9234
+  } */
+
+  body  {
+  background-image: linear-gradient( 
+    #a1ffce
+    ,
+    #b9ca35);
+  background-repeat: no-repeat;
+  min-height: 100vh;
+
+}
+/* .nav:hover{
+ display: none;
+} */
+
+.logo {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2rem;
+  position: absolute;
+  left: 0;
+  top: 0rem;
+  text-align: left;
+
+/*   
+  &:hover {
+      border-bottom: 2px solid #00B300;
+      text-decoration: none;
+
+      &:active {
+          color: rgb(37, 37, 206);
+      }
+  } */
+}
+
+.nav-hover:hover{
+  border-bottom: 2px solid #00B300;
+  text-decoration: none;
+}
+
+.home-btn:hover{
+  text-decoration: none;
+}
+
+
+.myjumbo{
+  background-image: linear-gradient( to right top,
+    #00c3ffce
+,
+    #ffff1cb9
+  );
+  color: black;
+  height: 20rem;
+  border-radius: .7rem;
+  box-shadow: 0 1rem 3rem #777;
+  overflow: hidden;
+  margin-bottom: 5rem;
+  margin-top: 2rem;
+  position: relative;
+
+}
+
+.jumbo-text{
+  /* color: #35d0ba; */
+  margin-top: 3rem;
+}
+
+.blog-text{
+  background-image: linear-gradient( to left bottom,
+  #00c3ffce
+,
+  #ffff1cb9
+);
+  color: black;
+  height: 100%;
+  border-radius: .2rem;
+  box-shadow: 0 1rem 3rem #777;
+  overflow: hidden;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+  min-height: 20rem;
+  padding:4rem;
+
+}
+
+/* .blog-div{
+  display: flex;
+  justify-self: stretch;
+  flex-wrap: wrap;
+} */
+/* .pagination{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+} */
+.user-post-pic{
+  width: 20%;
+  position: absolute;
+  left: 14%;
+  top: 13%;
+}
+.user-post-header{
+  width: 75%;
+  position: absolute;
+  left: 14rem;
+  top: 4rem;
+}
+.user-post-text{
+  width: 75%;
+  position: absolute;
+  left: 14rem;
+  top: 10rem;
+}
+
+.update-post{
+  /* background-color:purple ; */
+  border-radius: .4rem;
+  display: inline-block;
+
+}
+
+.mycard{
+  /* border: .03rem solid black ; */
+  width:90%;
+ 
+  box-shadow: 0 1rem 2rem #777;
+  border-radius: 2rem;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-image: linear-gradient( to left bottom,
+    #00c3ffce
+,
+    #ffff1cb9
+  );
+
+}
+
+.myform-input{
+ min-height: 50rem;
+ height: 100%;
+}
+
+.register-form{
+  margin: 7rem auto;
+  width: 100%;
+  box-shadow: 0 1rem 2rem #777;
+  border-radius: 2rem;
+  padding: 5rem;
+  background-image:  linear-gradient(to right bottom,#D9D9D9 , #80d0c7);
+
+}
+
+.login-form{
+  margin: 20vh auto;
+  width: 30%;
+  box-shadow: 0 1rem 2rem #777;
+  border-radius: 2rem;
+  padding: 5rem;
+  text-align: left;
+}
+
+.account-form{
+  margin: 5% auto;
+}

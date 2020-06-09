@@ -1,0 +1,76 @@
+.blobs {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    max-width: 63rem;
+    z-index: -4;
+    top: -44rem;
+
+    @include res(phone) {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+        z-index: -4;
+
+
+
+    }
+
+    &__blob1 {
+        opacity: 70%;
+
+        width: 100%;
+        position: absolute;
+        top: 3rem;
+        animation: blob 7s ease-in-out;
+        animation-iteration-count: infinite;
+        transition: 5s ease-out;
+        left: 29rem;
+        
+        &:not(last-child){
+            margin-bottom: 20rem;
+        }
+
+
+        @include res(phone) {
+            opacity: 57%;
+            top: 18rem;
+            animation: blob 7s ease-in-out;
+            animation-iteration-count: infinite;
+            transition: 5s ease-out;
+            left: 0;
+        }
+    }
+
+    &__blob2 {
+        opacity: 70%;
+        width: 100%;
+        position: absolute;
+        top: 65rem;
+        right: 7rem;
+        animation: blob 7s ease-in-out;
+        animation-iteration-count: infinite;
+    }
+
+    &__blob3 {
+        opacity: 70%;
+        width: 100%;
+        position: absolute;
+        top: 112rem;
+        animation: blob 7s ease-in-out;
+        animation-iteration-count: infinite;
+        left: 15rem;
+
+        @include res(phone) {
+            opacity: 70%;
+ 
+            width: 87%;
+            position: absolute;
+            top: 150rem;
+            animation: blob 7s ease-in-out;
+            animation-iteration-count: infinite;
+            left: 0rem;
+        }
+    }
+}

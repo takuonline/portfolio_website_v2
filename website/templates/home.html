@@ -1,0 +1,201 @@
+{%extends "base.html"%}
+{%block content%}
+
+
+<main class="main"> 
+
+  <section class="section-namebox">
+  <div class="namebox">
+
+    <h1 class="display-4 text-success namebox__name ">Hey, l am Takudzwa</h1>
+    <p class="lead namebox__greet">Welcome to my site!</p>
+    <hr class="my-4">
+
+    <p class="namebox__description">Apart from designing this website you can check out my other projects below. <br>
+      Feel free explore. Mind the cubes!</p>
+
+    <a href="{{url_for("core.index")}}" class="namebox__blog-btn">My blog →</a>
+    <!-- <a class="btn btn-primary btn-lg border border-success shadow" href="#" target="about-sect" role="button">A
+      little about me</a> -->
+  </div>
+</section>
+
+
+<section class="section-blobs">
+  <div class="blobs">
+
+    <svg viewBox="60 55 120 120" class="blobs__blob1" xmlns="http://www.w3.org/2000/svg">
+      <path fill="#a683e3"
+        d="M8.6,-14.7C12.1,-11.1,16.5,-10.3,30.8,-6.1C45.1,-1.9,69.3,5.8,70.6,11.5C71.8,17.1,50.1,20.8,37.5,28.8C24.9,36.8,21.4,49,13.7,55.1C6.1,61.1,-5.9,60.9,-14.6,55.7C-23.4,50.4,-28.9,40.2,-27.2,30.2C-25.5,20.3,-16.5,10.7,-18.1,2.3C-19.8,-6,-32,-13.1,-36.1,-21.6C-40.2,-30.1,-36.1,-40,-28.7,-41.8C-21.4,-43.6,-10.7,-37.4,-4.1,-31.1C2.6,-24.8,5.1,-18.3,8.6,-14.7Z"
+        transform="translate(100 100)" />
+    </svg>
+
+    <svg class="blobs__blob2" viewBox="60 55 120 120" xmlns="http://www.w3.org/2000/svg">
+      <path fill="#a683e3"
+        d="M21,-34C25.3,-34,25.4,-24.4,35.8,-17.1C46.1,-9.8,66.8,-4.9,66.2,-0.3C65.7,4.3,44,8.6,32.9,14.6C21.8,20.6,21.4,28.4,17.6,31.3C13.9,34.1,7,32,-0.1,32.2C-7.2,32.4,-14.4,34.8,-16.8,31.3C-19.3,27.7,-17,18.1,-16.6,11.9C-16.1,5.6,-17.6,2.8,-20.2,-1.5C-22.8,-5.8,-26.6,-11.7,-27.8,-19.2C-28.9,-26.8,-27.5,-36,-22.5,-35.6C-17.4,-35.1,-8.7,-25,-0.2,-24.7C8.4,-24.4,16.8,-34,21,-34Z"
+        transform="translate(100 100)" />
+    </svg>
+    <svg class="blobs__blob3" viewBox="55 20 120 120" xmlns="http://www.w3.org/2000/svg">
+      <path fill="#a683e3"
+        d="M24.6,-42.8C36.1,-36,52.5,-37.9,61.5,-32.2C70.6,-26.5,72.2,-13.3,65,-4.1C57.9,5,41.9,10,32.5,14.9C23,19.8,20,24.6,15.6,30.1C11.3,35.6,5.6,41.9,-1.7,44.8C-9,47.7,-18,47.2,-20.1,40.4C-22.3,33.6,-17.6,20.6,-22.8,12.8C-28.1,5,-43.1,2.5,-44.7,-0.9C-46.4,-4.4,-34.6,-8.8,-28.6,-15.3C-22.7,-21.9,-22.7,-30.6,-18.9,-41.8C-15.2,-53,-7.6,-66.7,-0.5,-65.8C6.6,-64.9,13.1,-49.5,24.6,-42.8Z"
+        transform="translate(100 100)" />
+    </svg>
+  </div>
+</section>
+ 
+
+<section class="section-cubes">
+  <div class="cubes">
+    <div class="cubes__cube1"></div>
+    <div class="cubes__cube2"></div>
+    <div class="cubes__cube3"></div>
+    <div class="cubes__cube4"></div>
+    <div class="cubes__cube5"></div>
+  </div>
+</section>
+
+<section class="section-projects">
+  <div class="row  projects">
+    <div class="col-sm-3 ">
+
+      <a href="{{url_for("face_app.face_blur")}}" class="projects__link">
+        <div class="projects__faceapp ">
+          <div class="projects__faceapp--title">Face blur app</div>
+          <p class="projects__faceapp--description">Built using the Opencv python library, this app can detect faces
+            and blur them</p>
+        </div>
+      </a>
+
+    </div>
+
+
+    <div class="col-sm-3 ">
+      <div class="projects__dictapp">
+        <a href="{{url_for("dict.dictionary")}}" class="projects__link"> 
+
+
+
+          <div class="projects__dictapp--title">Dictionary app </div>
+          <p class="projects__dictapp--description">A nifty dictionary application you can use to look up english
+            words </p>
+        </a>
+      </div>
+    </div>
+
+
+    <div class="col-sm-3 ">
+      <div class="projects__drumapp">
+        <a href="{{url_for("drum.drum_app")}}" class="projects__link">
+          <div class="projects__drumapp--title">Drumkit</div>
+          <p class="projects__drumapp--description">A drumkit application you can use play drums </p>
+        </a>
+      </div>
+    </div>
+
+
+
+    <div class="col-sm-3 ">
+
+      <a href="{{url_for("news.news_app")}}" class="projects__link">
+        <div class=" projects__newsapp">
+          <div class="projects__newsapp--title">Real/fake news classifier </div>
+          <p class="projects__newsapp--description">This Machine learning model can classify news articles in to
+            Fake or real</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section-about">
+  <div class="about" id="about">
+    <div class="about__pic"></div>
+
+    <h1 class="about__header">About</h1>
+
+    <div class="about__profile">
+      <img class="about__profile--img" src="../static/Adobe_pics/face.png" alt="Profile pics">
+      <div class="about__profile--text">
+        <h3 class="text-success">Profile</h3>
+        <p>Self-motivated university student with a record of academic and extracurricular success studying Bcom
+          Financial
+          Accounting and critical experience in technology.</p>
+        <p>And when I am not working with numbers, I would be coding out a program or doing some graphics designing
+          works.
+        </p>
+      </div>
+    </div>
+
+
+    <div class="about__coding">
+      <!-- <img src="../static/code.jpg" alt="coding image" class="about__coding--img"> -->
+      <div class="about__coding--text">
+        <div class="about__coding--text-header">Coding</div>
+        <p>In my spare time l have decided to take in upon myself to learn how to code online and l am able to using
+          Python
+          and SQL (database query language).
+          I decided to keep myself relevant in a world that keeps advancing in technology. In doing so l sort to
+          differentiate
+          myself.
+          Common task l can do include:</p>
+        <ul>
+          <li>Data visualisation (using matplotlib, pandas, seaborn)</li>
+          <li>Machine learning and data sciences</li>
+          <li>Automation</li>
+          <li>web scraping</li>
+          <li>GUI development</li>
+          <li>web development: </li>
+        </ul>
+        <p>I also learnt SQL and can query from a database.</p>
+
+      </div>
+
+
+    </div>
+
+    <div class="about__design">
+      <!-- <img src="../static/accounting.jpg" alt="design image" class="about__design--img"> -->
+      <div class="about__design--text">
+        <div class="about__design--header">Designing</div>
+        <p>Besides coding l also love graphics designing works and motion graphics. For this l use the following
+          software:
+        </p>
+        <ul>
+          <li>Adobe Photoshop</li>
+          <li>Illustrator</li>
+          <li>After effects</li>
+          <li>And PowerPoint</li>
+        </ul>
+        <div class="about__design--text-blog-btn"><a href="#">My design works</a></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <section class="section-designs">
+
+    <div class="designs">
+      <img src="../static/Adobe_pics/cute.png" alt="Image 1" class="designs__img designs__img--1">
+      <img src="../static/Adobe_pics/splash.png" alt="Image 4" class="designs__img designs__img--2">
+      <img src="../static/Adobe_pics/glitch.png" alt="Image 3" class="designs__img designs__img--3">
+      <img src="../static/Adobe_pics/grow.png" alt="Image 2" class="designs__img designs__img--4">
+      <img src="../static/Adobe_pics/splash2.png" alt="Image 5" class="designs__img designs__img--5">
+    </div>
+
+  </section>
+
+
+  <!-- <footer class="my-footer">
+    Made with 💖 by Takudzwa Makusha
+    copyright 2020
+  
+  </footer> -->
+
+</main>
+
+
+{% endblock %}

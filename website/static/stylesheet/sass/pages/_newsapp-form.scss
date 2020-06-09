@@ -1,0 +1,26 @@
+.newsapp-form{
+    outline: .1rem solid rgba($color: #000000, $alpha: .1);
+ 
+    margin: 5rem auto;
+    box-shadow: 0 .5rem 2rem #777;
+    padding: 3rem;
+
+
+
+    &__result{
+        font-size: 2rem;
+        color: darkgreen;
+        font-weight: 500;
+        padding: 1rem;
+
+    }
+}
+
+.form-container{
+    // outline: .1rem solid rgba($color: #000000, $alpha: .1);
+    // outline-offset: 1rem;
+    margin: 5rem auto;
+    // box-shadow: 0 1rem 3rem #777;
+    padding: 3rem;
+
+}

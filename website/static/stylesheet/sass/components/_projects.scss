@@ -1,0 +1,202 @@
+.projects {
+    margin-top: 2rem;
+    width: 100%;
+    position: relative;
+
+    @include res(phone) {
+        margin: auto 0;
+        
+    
+    }
+
+    &__link{
+        &:hover{
+            text-decoration: none;
+        }
+    }
+
+
+
+    &__faceapp {
+        margin-right: 7rem;
+        border-radius: .5rem;
+        background-size: cover;
+        width: 17rem;
+        height: 25rem;
+        padding: 2rem;
+        border: 1px solid blueviolet;
+        box-shadow: 11px -7px 8px #aaaaaa;
+        transition: all .2s ease-in-out;
+        // background-image: linear-gradient(#1f4037
+        // ,
+        // #99f2c8);
+        background-image: linear-gradient(#8d2de277,
+                #4b00e08f), url("../static/ai2.jpg");
+
+
+        @include res(phone) {
+            margin-bottom: 4rem;   
+        }
+
+        &--title {
+            color: white;
+            margin-bottom: 15rem;
+            text-decoration: none;
+            font-size: 1.2rem;
+
+           
+        }
+
+        &--description {
+            color: white;
+        }
+
+        &:hover {
+        
+            transform: translateY(-.7rem) scale(1.015);
+            box-shadow: 12px 20px 8px #aaaaaa;
+
+
+        }
+
+        &:active {
+            transform: translateY(.2rem);
+        }
+    }
+
+    &__newsapp {
+        position: relative;
+        margin-right: 7rem;
+        background-color: white;
+        border-radius: .5rem;
+        background-size: cover;
+        width: 17rem;
+        height: 25rem;
+        padding: 2rem;
+        border: 1px solid blueviolet;
+        box-shadow: 11px -7px 8px #aaaaaa;
+
+        background-image: linear-gradient(#8d2de265,
+                #4b00e06b), url(../static/robot.jpg);
+
+        transition: all .2s ease-in-out;
+
+        @include res(phone) {
+            margin-bottom: 4rem;
+            
+        }
+
+
+        &--title {
+            color: white;
+            position: relative;
+            margin-bottom: 11rem;
+            font-size: 1.2rem;
+
+        }
+
+        &--description {
+            color: white;
+            position: relative;
+            top: 3rem;
+        }
+
+        &:hover {
+            transform: translateY(-.7rem) scale(1.015);
+
+        }
+
+        &:active {
+            transform: translateY(.2rem);
+        }
+
+    }
+
+
+    &__dictapp {
+        position: relative;
+        margin-right: 7rem;
+        border-radius: .5rem;
+        background-size: cover;
+        width: 17rem;
+        height: 25rem;
+        padding: 2rem;
+        border: 1px solid blueviolet;
+        transition: all .2s ease-in;
+        box-shadow: 11px -7px 8px #aaaaaa;
+        // background-image: linear-gradient(
+        //     #00b4db
+        //     ,
+        //     #0083b0);
+        background-image: linear-gradient(#8d2de265,
+                #4b00e06b), url(../static/dictionary.jpg);
+
+
+        @include res(phone) {
+            margin-bottom: 4rem;
+            
+        }
+
+
+        &--title {
+            color: white;
+            margin-bottom: 15rem;
+            font-size: 1.2rem;
+
+        }
+
+        &--description {
+            color: white;
+        }
+        &:hover {
+            transform: translateY(-.7rem) scale(1.015);
+
+        }
+
+        &:active {
+            transform: translateY(.2rem);
+        }
+    }
+
+
+    &__drumapp {
+        position: relative;
+        margin-right: 7rem;
+        border-radius: .5rem;
+        background-size: cover;
+        width: 17rem;
+        height: 25rem;
+        padding: 2rem;
+        border: 1px solid blueviolet;
+        transition: all .2s ease-in;
+        box-shadow: 11px -7px 8px #aaaaaa;
+        background-image: linear-gradient(#8d2de265,
+                #4b00e06b), url(../static/drum-kit/images/tom1.png);
+
+                @include res(phone){
+                    margin-bottom: 4rem;
+                    
+                }
+
+
+        &--title {
+            color: white;
+            margin-bottom: 15rem;
+            font-size: 1.2rem;
+
+        }
+
+        &--description {
+            color: white;
+        }
+
+        &:hover {
+            transform: translateY(-.7rem) scale(1.015);
+
+        }
+
+        &:active {
+            transform: translateY(.2rem);
+        }
+    }
+}

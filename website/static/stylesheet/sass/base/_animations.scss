@@ -1,0 +1,38 @@
+
+@keyframes appear {
+
+    0% {
+      opacity: 0;
+  
+    }
+  
+    100% {
+      opacity: 100%;
+    }
+  }
+  
+  @keyframes blob{
+  0%{
+    transform: scale(1);
+    /* transform: rotate(0deg); */
+   }
+  25%{
+    transform: scale(1.05);
+    /* transform: rotate(15deg); */
+    
+  }50%{
+    transform: scale(1.09);
+    /* transform: rotate(30deg); */
+    
+  }75%{
+    transform: scale(1.045);
+    /* transform: rotate(15deg); */
+  
+    
+  }
+  100%{
+    transform: scale(1);
+    /* transform: rotate(0deg); */
+  
+  }
+  }

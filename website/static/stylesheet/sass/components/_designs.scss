@@ -1,0 +1,68 @@
+
+.designs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    // outline: 1rem solid rgb(53, 57, 58);
+    // outline-offset: 1rem;
+    // transition: all .3s ease-in;
+    margin: auto 0;
+
+    &__img {
+        width: 30%;
+        height: auto;
+        outline-offset: 1rem;
+        box-shadow: 0 1rem 3rem #777;
+        border-radius: .5rem;
+        transition: all .3s;
+
+        &:hover {
+            outline: 1rem solid purple;
+            transform: scale(1.07);
+        }
+
+        &--1 {
+            transform: rotate(-10deg);
+
+            &:hover {
+                transform: scale(1.07)  rotate(-10deg);
+            }
+
+        }
+
+        &--2 {
+
+            &:hover {
+                transform: scale(1.07) ;
+            }
+        }
+
+        &--3 {
+            transform: rotate(10deg);
+
+            &:hover {
+               
+                transform: scale(1.07)  rotate(10deg);
+            }
+        }
+
+        &--4 {
+            transform: rotate(-10deg);
+
+            &:hover {
+            
+                transform: scale(1.07)  rotate(-10deg);
+            }
+        }
+
+        &--5 {
+            transform: rotate(10deg);
+
+            &:hover {
+                transform: scale(1.07)  rotate(10deg);
+            }
+        }
+
+
+    }
+}

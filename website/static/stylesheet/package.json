@@ -1,0 +1,12 @@
+{
+  "name": "stylesheet",
+  "version": "1.0.0",
+  "description": "my website sass files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "mysass": "node-sass -w sass/main.scss ../style.css"
+  },
+  "author": "Takudzwa Makusha",
+  "license": "ISC"
+}
