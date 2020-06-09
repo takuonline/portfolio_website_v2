@@ -81,7 +81,8 @@ COMPONENTS
 .about {
   margin-top: 12rem;
   width: 100%;
-  position: relative; }
+  position: relative;
+  font-size: 1.1rem; }
   @media (max-width: 37.5em) {
     .about {
       width: 100%;
@@ -89,7 +90,8 @@ COMPONENTS
       margin-right: 0; } }
   .about__header {
     padding-bottom: 5rem;
-    color: #10ac10; }
+    color: #10ac10;
+    margin-bottom: 2rem; }
     @media (max-width: 37.5em) {
       .about__header {
         margin: 0; } }
@@ -129,9 +131,12 @@ COMPONENTS
       background-image: linear-gradient(to right bottom, #0000006c, #4949495d), url(../static/code.jpg);
       -webkit-clip-path: polygon(0 0, 100% 13%, 379% 19%, 0 100%);
       clip-path: polygon(0 0, 100% 13%, 379% 19%, 0 100%);
-      height: 29rem;
+      height: 32rem;
       padding: 5rem;
-      color: white; }
+      color: white;
+      padding-right: 24rem;
+      margin-bottom: 3rem;
+      padding-left: 9rem; }
       @media (max-width: 37.5em) {
         .about__coding--text {
           background-size: cover;
@@ -220,7 +225,7 @@ COMPONENTS
   position: relative;
   margin: 0;
   padding: 0;
-  max-width: 63rem;
+  max-width: 66%;
   z-index: -4;
   top: -44rem; }
   @media (max-width: 37.5em) {
@@ -402,16 +407,19 @@ nav {
 
 .logo {
   font-family: 'Dancing Script', cursive;
-  font-size: 2rem;
+  font-size: 2.3rem;
   position: absolute;
-  left: 0;
-  top: 0rem;
-  text-align: left; }
-  .logo:hover {
-    border-bottom: 2px solid #00B300;
-    text-decoration: none; }
-    .logo:hover:active {
-      color: #2525ce; }
+  left: 4rem;
+  top: 4rem;
+  color: #00B300;
+  transition: all .2s ease-in;
+  z-index: 3; }
+  .logo a:hover {
+    text-decoration: none;
+    transform: scale(1.2);
+    cursor: pointer; }
+  .logo:active {
+    color: #2525ce; }
 
 .nav-myblog {
   background-color: darkturquoise;
@@ -606,8 +614,6 @@ nav {
     .projects__faceapp:hover {
       transform: translateY(-0.7rem) scale(1.015);
       box-shadow: 12px 20px 8px #aaaaaa; }
-    .projects__faceapp:active {
-      transform: translateY(0.2rem); }
   .projects__newsapp {
     position: relative;
     margin-right: 7rem;
@@ -635,8 +641,6 @@ nav {
       top: 3rem; }
     .projects__newsapp:hover {
       transform: translateY(-0.7rem) scale(1.015); }
-    .projects__newsapp:active {
-      transform: translateY(0.2rem); }
   .projects__dictapp {
     position: relative;
     margin-right: 7rem;
@@ -660,8 +664,6 @@ nav {
       color: white; }
     .projects__dictapp:hover {
       transform: translateY(-0.7rem) scale(1.015); }
-    .projects__dictapp:active {
-      transform: translateY(0.2rem); }
   .projects__drumapp {
     position: relative;
     margin-right: 7rem;
@@ -685,8 +687,6 @@ nav {
       color: white; }
     .projects__drumapp:hover {
       transform: translateY(-0.7rem) scale(1.015); }
-    .projects__drumapp:active {
-      transform: translateY(0.2rem); }
 
 .body {
   text-align: center;

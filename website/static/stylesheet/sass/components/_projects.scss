@@ -4,9 +4,7 @@
     position: relative;
 
     @include res(phone) {
-        margin: auto 0;
-        
-    
+        margin: auto 0;     
     }
 
     &__link{
@@ -14,8 +12,6 @@
             text-decoration: none;
         }
     }
-
-
 
     &__faceapp {
         margin-right: 7rem;
@@ -42,9 +38,7 @@
             color: white;
             margin-bottom: 15rem;
             text-decoration: none;
-            font-size: 1.2rem;
-
-           
+            font-size: 1.2rem;     
         }
 
         &--description {
@@ -52,16 +46,10 @@
         }
 
         &:hover {
-        
             transform: translateY(-.7rem) scale(1.015);
             box-shadow: 12px 20px 8px #aaaaaa;
-
-
         }
 
-        &:active {
-            transform: translateY(.2rem);
-        }
     }
 
     &__newsapp {
@@ -106,9 +94,6 @@
 
         }
 
-        &:active {
-            transform: translateY(.2rem);
-        }
 
     }
 
@@ -152,10 +137,6 @@
             transform: translateY(-.7rem) scale(1.015);
 
         }
-
-        &:active {
-            transform: translateY(.2rem);
-        }
     }
 
 
@@ -178,7 +159,6 @@
                     
                 }
 
-
         &--title {
             color: white;
             margin-bottom: 15rem;
@@ -193,10 +173,6 @@
         &:hover {
             transform: translateY(-.7rem) scale(1.015);
 
-        }
-
-        &:active {
-            transform: translateY(.2rem);
         }
     }
 }
