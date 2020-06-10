@@ -115,11 +115,17 @@ nav {
 
 
 
+
+
+
+
+
+
 .c-nav {
     display: none;
 
     @include res(tab-port) {
-        display: contents;
+        display: block;
 
 
         &__checkbox {
@@ -131,60 +137,57 @@ nav {
             height: 5rem;
             width: 5rem;
             position: fixed;
-            top: 6.5rem;
-            right: 6.5rem;
+            top: 4rem;
+                right: 4rem;
             border-radius: 50%;
             z-index: 102;
             box-shadow: 0 1rem 3rem #aaa;
             text-align: center;
             cursor: pointer;
 
-            @include res(tab-port) {
-                top: 4rem;
-                right: 4rem;
-
-            }
-
             @include res(phone) {
                 top: 3rem;
                 right: 3rem;
+                height: 4rem;
+                width:4rem
+
 
             }
         }
-
+//background with color purple
         &__background {
-            height: 4rem;
-            width: 4rem;
+            top: 4.5rem;
+            right: 4.5rem;
             border-radius: 50%;
             position: fixed;
-            top: 6.5rem;
-            right: 6.5rem;
+            width: 3rem;
+            height: 3rem;
             background-image: radial-gradient(#8d2de2,
                     #4b00e0); //$c-blue-light, $c-blue-dark);
             z-index: 100;
             transition: transform .8s cubic-bezier(.86, 0, .07, 1);
 
-            @include res(tab-port) {
-                top: 4rem;
-                right: 4rem;
+            // @include res(tab-port) {
+            //     top: 4rem;
+            //     right: 4rem;
 
-            }
+            // }
 
             @include res(phone) {
                 top: 3.5rem;
                 right: 3.5rem;
             }
         }
-
+//initially nav bar must have a width of 0 to hide it
         &__nav {
             height: 100vh;
-            // width: 100%;
+            width: 0;
             position: fixed;
             top: 0;
             left: 0;
             z-index: 101;
             opacity: 0;
-            width: 0;
+            visibility: hidden;
             transition: all .8s;
 
         }
@@ -208,7 +211,7 @@ nav {
             list-style: none;
             text-align: center;
             width: 100%;
-
+            // transform: translateX(-5rem);
             @include res(phone) {
                 margin-bottom: 2rem;
             }
@@ -259,14 +262,16 @@ nav {
 
         }
 
-
         &__checkbox:checked~&__background {
             transform: scale(80);
         }
+//expand navbar width to show it when hidden check box is clicked on 
 
         &__checkbox:checked~&__nav {
             width: 100%;
             opacity: 1;
+            visibility: visible;
+           
         }
 
 
@@ -287,6 +292,8 @@ nav {
 
                 @include res(phone) {
                     height: .12rem;
+                    top: -0.4rem;
+                    width: 2.5rem;
 
                 }
             }
@@ -297,6 +304,13 @@ nav {
                 height: .14rem;
                 background-color: rgb(80, 80, 80);
                 display: inline-block;
+
+                @include res(phone) {
+                    
+                    width: 2.5rem;
+
+                }
+
             }
 
             &::before,
@@ -310,10 +324,16 @@ nav {
 
             &::before {
                 top: -.8rem;
+                // @include res(phone){
+                //     top:-.8rem;
+                // }
             }
 
             &::after {
-                top: .8rem
+                top: .81rem;
+                // @include res(phone){
+                //     top:1.2rem;
+                // }
             }
 
         }

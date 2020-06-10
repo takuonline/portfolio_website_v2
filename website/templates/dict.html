@@ -12,7 +12,7 @@
           {{form.hidden_tag()}}
           {{form.word.label}}
 <br>
-          {{form.word(class="form-control w-25", rows="1")}}
+          {{form.word(class=" dictapp-form__input ", rows="1")}}
           {{form.submit(class="btn btn-primary mt-3 shadow border border-success")}}
         </form>
 <br>
@@ -33,7 +33,7 @@
 <form  method="post">
     {{form.hidden_tag()}}
     {{form.word.label}} <br>
-    {{form.word(class="form-control w-25", rows="1")}}
+    {{form.word(class=" dictapp-form__input ", rows="1")}}
     {{form.submit(class="btn btn-primary shadow border border-success")}}
   </form>
 
@@ -43,7 +43,7 @@
               <form  method="post">
                   {{form.hidden_tag()}}
                   {{form.word.label}} <br>
-                  {{form.word(class="form-control w-25", rows="1")}}
+                  {{form.word(class="dictapp-form__input", rows="1")}}
                   {{form.submit(class="btn btn-primary shadow border border-success")}}
                 </form>
 {%endif%}

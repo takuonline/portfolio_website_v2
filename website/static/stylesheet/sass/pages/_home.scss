@@ -1,11 +1,11 @@
 .namebox {
-    top: 8rem;
-    left: 0rem;
-    font-size: 1.1rem;
+  top: 8rem;
+  left: 0rem;
+  font-size: 1.1rem;
 
-    @include res(phone){
-      font-size: 1rem;
-    }
+  @include res(phone) {
+    font-size: 1rem;
+  }
 
 
   &__name {
@@ -47,48 +47,81 @@
 }
 
 
-.main{
-  margin-left: 15rem;
+.main {
+  margin: auto 9rem;
   position: relative;
   width: 80%;
   display: inline-block;
   max-width: 100%;
 
-  @include res(phone){
+  @include res(tab-port) {
+    margin-left: 0;
+    display: inline-block;
+    width: 100%;
+
+  }
+
+  @include res(phone) {
     margin-left: .3rem;
     position: relative;
     width: 100%;
     display: inline-block;
     max-width: 100%;
-
+    overflow-x: hidden;
   }
-  
+
+
+
 }
 
 
-.section-namebox{
-    display: block;
-    padding: 6rem;
-    padding-left: 0;
+.section-namebox {
+  display: block;
+  padding: 6rem;
+  padding-left: 0;
+  @include res(tab-port) {
+    // margin-left: 0;
+    padding-left: 1rem;
+   
 
   }
 
-  .section-blobs{
-    // position: absolute;
+}
+
+.section-blobs {
+  // position: absolute;
+  @include res(tab-port) {
+    // overflow-x: hidden;
 
   }
-  .section-cubes{
-    // position: relative;
+
+}
+
+.section-cubes {
+  // position: relative;
+  @include res(tab-port) {
+    // overflow-x: hidden;
+  }
+
+}
+
+.section-projects {
+  @include res(tab-port) {
+    // margin-left: 0;
+    padding-left: 1rem;
 
   }
-  .section-projects{
+}
 
-  }
-.section-about{
+.section-about {
   margin: 3rem auto;
   margin-bottom: 10rem;
+}
 
+.section-designs {
+  position: relative;
+
+  @include res(phone) {
+    margin-bottom: 10rem;
   }
-  .section-designs{
-    position: relative;
 }

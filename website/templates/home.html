@@ -54,10 +54,12 @@
   </div>
 </section>
 
-<section class="section-projects">
-  <div class="row  projects">
-    <div class="col-sm-3 ">
 
+
+<section class="section-projects">
+  <div class="myrow  projects">
+
+    <div class="col-1-of-2 col-1-of-4 ">
       <a href="{{url_for("face_app.face_blur")}}" class="projects__link">
         <div class="projects__faceapp ">
           <div class="projects__faceapp--title">Face blur app</div>
@@ -65,16 +67,12 @@
             and blur them</p>
         </div>
       </a>
-
     </div>
 
 
-    <div class="col-sm-3 ">
+    <div class="col-1-of-2 col-1-of-4 ">
       <div class="projects__dictapp">
         <a href="{{url_for("dict.dictionary")}}" class="projects__link"> 
-
-
-
           <div class="projects__dictapp--title">Dictionary app </div>
           <p class="projects__dictapp--description">A nifty dictionary application you can use to look up english
             words </p>
@@ -83,7 +81,7 @@
     </div>
 
 
-    <div class="col-sm-3 ">
+    <div class="col-1-of-2 col-1-of-4 ">
       <div class="projects__drumapp">
         <a href="{{url_for("drum.drum_app")}}" class="projects__link">
           <div class="projects__drumapp--title">Drumkit</div>
@@ -94,8 +92,7 @@
 
 
 
-    <div class="col-sm-3 ">
-
+    <div class="col-1-of-2 col-1-of-4 ">
       <a href="{{url_for("news.news_app")}}" class="projects__link">
         <div class=" projects__newsapp">
           <div class="projects__newsapp--title">Real/fake news classifier </div>
@@ -104,6 +101,8 @@
         </div>
       </a>
     </div>
+
+
   </div>
 </section>
 

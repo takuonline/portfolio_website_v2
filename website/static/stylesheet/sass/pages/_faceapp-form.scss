@@ -5,4 +5,25 @@
     margin: 5rem auto;
     // box-shadow: 0 .5rem 2rem #777;
     padding: 3rem;
+    width: 100%;
+
+    @include res(phone) {
+        padding: 0;
+        outline: none;
+
+    }
+
+    & ul{
+        @include res(tab-port) {
+            line-break: anywhere;
+            hyphens: auto;
+        }
+        @include res(phone) {
+            line-break: anywhere;
+            hyphens: auto;
+        }
+
+    }
+
+
 }

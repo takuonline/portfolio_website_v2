@@ -3,8 +3,16 @@
     width: 100%;
     position: relative;
 
+   
+    @include res(tab-port) {
+        display: flex;
+        flex-wrap: wrap;    
+    }
+
     @include res(phone) {
-        margin: auto 0;     
+        margin: auto 0; 
+        display: flex;
+        flex-wrap: wrap;     
     }
 
     &__link{

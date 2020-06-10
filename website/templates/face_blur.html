@@ -9,7 +9,6 @@
     <p>Built using Opencv library and python this application can detect peoples faces and blur them</p>
     <hr>
     <p>Here is an example url you can copy and paste from the famous Solvay conference (source: wikipedia) </p>
-
     <ul>
       <li>
         https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Solvay_conference_1927.jpg/800px-Solvay_conference_1927.jpg
@@ -20,7 +19,7 @@
     <form method="post">
 
       {{form.hidden_tag()}}
-      {{form.pic.label}} {{form.pic(class="form-control w-75")}}
+      {{form.pic.label}} {{form.pic(class="form-control")}}
 
       <br>
       {{form.submit(class_="btn btn-primary")}}
