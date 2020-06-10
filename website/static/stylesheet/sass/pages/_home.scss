@@ -58,7 +58,6 @@
     margin-left: 0;
     display: inline-block;
     width: 100%;
-
   }
 
   @include res(phone) {
@@ -70,8 +69,6 @@
     overflow-x: hidden;
   }
 
-
-
 }
 
 
@@ -80,37 +77,30 @@
   padding: 6rem;
   padding-left: 0;
   @include res(tab-port) {
-    // margin-left: 0;
     padding-left: 1rem;
-   
-
   }
-
 }
 
 .section-blobs {
-  // position: absolute;
   @include res(tab-port) {
-    // overflow-x: hidden;
-
   }
-
 }
 
 .section-cubes {
-  // position: relative;
   @include res(tab-port) {
-    // overflow-x: hidden;
   }
-
 }
 
 .section-projects {
   @include res(tab-port) {
-    // margin-left: 0;
     padding-left: 1rem;
 
   }
+}
+
+.section-ai {
+ margin:7rem auto;
+
 }
 
 .section-about {
