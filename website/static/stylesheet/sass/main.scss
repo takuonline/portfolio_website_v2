@@ -3,7 +3,7 @@
 @import "abstracts/variables";
 
 @import "layout/header";
-@import "components/grid";
+
 
 @import "base/animations";
 @import "base/base";
@@ -19,8 +19,13 @@
 @import "components/drumkit";
 @import "components/designs";
 @import "components/ai";
+@import "components/grid";
 
 @import "pages/newsapp-form";
 @import "pages/faceapp-form";
 @import "pages/dictapp-form";
 @import "pages/home";
+@import "pages/contact";
+
+
+

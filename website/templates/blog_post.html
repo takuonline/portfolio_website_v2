@@ -1,28 +1,25 @@
 {%extends "baseb.html"%}
 
 {%block content%}
-<div class="myjumbo text-center  jumbo-text">
+<div class="blog-post myjumbo">
 
-  <img class="user-post-pic" src="{{url_for("static",filename="profile_pics/"+post.author.profile_image)}}" alt="Userprofile pic">
-<div class="user-post-profile">
+  <img class="user-post-pic" src="{{url_for("static",filename="profile_pics/"+post.author.profile_image)}}"
+    alt="Userprofile pic">
+
+  <div class="user-post-profile">
+    <h1 class="display-4 user-post-header">{{post.title}}</h1>
+    <div class="user-post-text">
+      <h2 class="lead">Written by: {{post.author.username}}</h2>
+      <h6>Published: {{post.date.strftime("%B %d, %Y")}}</h6>
+    </div>
 
 
-  <h1 class="display-4 user-post-header">{{post.title}}</h1>
-  <!-- <hr class="my-4"> -->
-  <div class="user-post-text">
-
- 
-  <h2 class="lead">Written by: {{post.author.username}}</h2>
-
-  <h6>Published: {{post.date.strftime("%B %d, %Y")}}</h6>
-
-</div>
-</div>
+  </div>
 </div>
 {% if post.author ==  current_user%}
 <div class="update-post">
   <button class="btn btn-warning"> <a href="{{url_for("blog_posts.update",blog_post_id=post.id)}}">Update</a></button>
-  
+
   <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#del_modal">Delete</button>
 </div>
 {%endif%}

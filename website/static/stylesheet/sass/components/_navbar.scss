@@ -167,11 +167,6 @@ nav {
             z-index: 100;
             transition: transform .8s cubic-bezier(.86, 0, .07, 1);
 
-            // @include res(tab-port) {
-            //     top: 4rem;
-            //     right: 4rem;
-
-            // }
 
             @include res(phone) {
                 top: 3.5rem;
@@ -285,29 +280,30 @@ nav {
 
 
             & {
-                width: 3rem;
+                width: 2rem;
                 height: .16rem;
                 background-color: rgb(80, 80, 80);
                 display: inline-block;
+   
 
                 @include res(phone) {
                     height: .12rem;
-                    top: -0.4rem;
-                    width: 2.5rem;
+                    top: -0.45rem;
+                    width: 2rem;
 
                 }
             }
 
             &::before,
             &::after {
-                width: 3rem;
+                width: 2rem;
                 height: .14rem;
                 background-color: rgb(80, 80, 80);
                 display: inline-block;
+                
 
-                @include res(phone) {
-                    
-                    width: 2.5rem;
+                @include res(phone) {       
+                    width: 2rem;
 
                 }
 
@@ -323,14 +319,14 @@ nav {
             }
 
             &::before {
-                top: -.8rem;
+                top: -.6rem;
                 // @include res(phone){
                 //     top:-.8rem;
                 // }
             }
 
             &::after {
-                top: .81rem;
+                top: .6rem;
                 // @include res(phone){
                 //     top:1.2rem;
                 // }
@@ -362,3 +358,15 @@ nav {
         }
     }
 }
+
+.drop-bg{
+    transform: scale(1) !important;
+}
+
+.close-nav{
+    width: 0  !important;
+    opacity: 0  !important;
+    visibility: hidden  !important;
+
+}
+

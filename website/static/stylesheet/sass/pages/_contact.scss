@@ -1,14 +1,18 @@
-.contact-page{
-    background-image: -webkit-linear-gradient(115deg, #a683e3 50%, lightgrey 50%);
-  }
-  
-  .contact-footer{
-    background-color: transparent;
+.contact-page {
+  // background-image: -webkit-linear-gradient(115deg, #a683e3 50%, lightgrey 50%);
+  margin-top: 9rem;
+}
+
+.contact-footer {
+
+  &__text {
     text-align: center;
+    background-color: rgb(27, 4, 49);
     padding: 2rem;
     box-shadow: 0 .7rem 2rem grey;
-    /* max-height: 4rem; */
-    /* margin: 5rem; */
     display: block;
+    color: white
+
   }
-  
+
+}

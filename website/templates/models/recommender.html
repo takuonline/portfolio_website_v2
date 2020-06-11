@@ -1,24 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../static/jupyter.css">
-    <title>Document</title>
-</head>
+<link rel="stylesheet" href="../../static/jupyter.css">
+{%extends"base.html" %}
+{%block content%}
+
+<br>
+<br>
+<br>
+<br>
+<br>
 
 
-<body>
-
-    <div class="container">
         {%raw%}
 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<hr>
-<p><a href='http://www.pieriandata.com'> <img src='../Pierian_Data_Logo.png' /></a></p>
-<hr>
+
 <h1 id="Recommender-Systems-with-Python">Recommender Systems with Python<a class="anchor-link" href="#Recommender-Systems-with-Python">&#182;</a></h1><p>Welcome to the code notebook for Recommender Systems with Python. In this lecture we will develop basic recommendation systems using Python and pandas. There is another notebook: <em>Advanced Recommender Systems with Python</em>. That notebook goes into more detail with the same data set.</p>
 <p>In this notebook, we will focus on providing a basic recommendation system by suggesting items that are most similar to a particular item, in this case, movies. Keep in mind, this is not a true robust recommendation system, to describe it more accurately,it just tells you what movies/items are most similar to your movie choice.</p>
 <p>There is no project for this topic, instead you have the option to work through the advanced lecture version of this notebook (totally optional!).</p>
@@ -2419,7 +2415,4 @@ Name: Star Wars (1977), dtype: float64</pre>
  
 
 {% endraw %}
-</div>
-
-</body>
-</html>
+{%endblock%}

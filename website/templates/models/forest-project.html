@@ -1,16 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../static/jupyter.css">
-    <title>Document</title>
-</head>
+<link rel="stylesheet" href="../../static/jupyter.css">
+{%extends"base.html" %}
+{%block content%}
+
+<br>
+<br>
+<br>
+<br>
 
 
-<body>
-
-    <div class="container">
+       
         {%raw%}
 
 
@@ -18,9 +16,7 @@
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<hr>
-<p><a href='http://www.pieriandata.com'> <img src='../Pierian_Data_Logo.png' /></a></p>
-<hr>
+
 <h1 id="Random-Forest-Project">Random Forest Project<a class="anchor-link" href="#Random-Forest-Project">&#182;</a></h1><p>For this project we will be exploring publicly available data from <a href="www.lendingclub.com">LendingClub.com</a>. Lending Club connects people who need money (borrowers) with people who have money (investors). Hopefully, as an investor you would want to invest in people who showed a profile of having a high probability of paying you back. We will try to create a model that will help predict this.</p>
 <p>Lending club had a <a href="https://en.wikipedia.org/wiki/Lending_Club#2016">very interesting year in 2016</a>, so let's check out some of their data and keep the context in mind. This data is from before they even went public.</p>
 <p>We will use lending data from 2007-2010 and be trying to classify and predict whether or not the borrower paid back their loan in full. You can download the data from <a href="https://www.lendingclub.com/info/download-data.action">here</a> or just use the csv already provided. It's recommended you use the csv provided as it has been cleaned of NA values.</p>
@@ -5164,7 +5160,7 @@ avg / total       0.80      0.85      0.78      2874
  
 
 {% endraw %}
-</div>
 
-</body>
-</html>
+
+{%endblock%}
+

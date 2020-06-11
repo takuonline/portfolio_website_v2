@@ -1,9 +1,19 @@
+<link rel="stylesheet" href="../../static/jupyter.css">
+{%extends"base.html" %}
+{%block content%}
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+        {%raw%}
+
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<hr>
-<p><a href='http://www.pieriandata.com'> <img src='../Pierian_Data_Logo.png' /></a></p>
-<hr>
+
 <h1 id="K-Means-Clustering-Project---Solutions">K Means Clustering Project - Solutions<a class="anchor-link" href="#K-Means-Clustering-Project---Solutions">&#182;</a></h1><p>For this project we will attempt to use KMeans Clustering to cluster Universities into to two groups, Private and Public.</p>
 <hr>
 <p>It is <strong>very important to note, we actually have the labels for this data set, but we will NOT use them for the KMeans clustering algorithm, since that is an unsupervised learning algorithm.</strong></p>
@@ -2998,3 +3008,7 @@ avg / total       0.29      0.22      0.16       777
 </div>
  
 
+{% endraw %}
+
+
+{%endblock%}

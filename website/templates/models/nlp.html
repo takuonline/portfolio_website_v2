@@ -1,24 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../static/jupyter.css">
-    <title>Document</title>
-</head>
+<link rel="stylesheet" href="../../static/jupyter.css">
+{%extends"base.html" %}
+{%block content%}
 
+<br>
+<br>
+<br>
+<br>
 
-<body>
-
-    <div class="container">
         {%raw%}
 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<hr>
-<p><a href='http://www.pieriandata.com'> <img src='../Pierian_Data_Logo.png' /></a></p>
-<hr>
+
 <h1 id="NLP-(Natural-Language-Processing)-with-Python">NLP (Natural Language Processing) with Python<a class="anchor-link" href="#NLP-(Natural-Language-Processing)-with-Python">&#182;</a></h1><p>This is the notebook that goes along with the NLP video lecture!</p>
 <p>In this lecture we will discuss a higher level overview of the basics of Natural Language Processing, which basically consists of combining machine learning techniques with text, and using math and statistics to get that text in a format that the machine learning algorithms can understand!</p>
 <p>Once you've completed this lecture you'll have a project using some Yelp Text Data!</p>
@@ -188,7 +182,6 @@
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src='http://www.astroml.org/sklearn_tutorial/_images/plot_ML_flow_chart_3.png' width=600/></p>
 
 </div>
 </div>
@@ -2310,7 +2303,5 @@ weighted avg       0.97      0.96      0.96      1115
  
 
 {% endraw %}
-</div>
 
-</body>
-</html>
+{%endblock%}

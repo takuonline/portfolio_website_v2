@@ -21,6 +21,13 @@
         padding: 2rem;
         margin-bottom: 5rem;
         height: 100%;
+        overflow: hidden;
+    width: 100%;
+
+        @include res(phone){
+                    
+            padding: .1rem;
+        }
 
 
         &--header {
@@ -36,10 +43,18 @@
             color: white;
             border-radius: .7rem;
             padding: 1rem;
-        }
 
+            @include res(phone){
+                width: 100%;
+                padding: .4;
+            }
+        }
         &--para{
             padding: 1rem;
+            @include res(phone){
+                
+                padding: .4rem;
+            }
         }
 
         &--1 {
@@ -50,6 +65,11 @@
             padding: 2rem;
             float: left;
             transition: all .3s ease-out;
+            @include res(phone){
+                
+                padding: .7rem;
+                padding-top: .9rem;
+            }
 
             &:hover{
                 transform: scale(1.03);
@@ -81,15 +101,15 @@
                 padding: 1rem;
                 transition: all .2s ease-in;
 
-                // &:hover{
-                //     transform: transitionY(.2rem);
-                // }
-
-
             }
 
             &-p {
                 padding: 1rem;
+                @include res(phone){
+                
+                    padding: .2rem;
+                   
+                }
             }
         }
 
@@ -99,6 +119,12 @@
             margin-left: auto;
             padding: 2rem;
             transition: all .3s ease-out;
+
+            @include res(phone){
+                
+                padding: .7rem;
+                padding-top: .9rem;
+            }
 
             &:hover{
                 transform: scale(1.03);
@@ -129,6 +155,11 @@
 
             &-p {
                 padding: 1rem;
+                @include res(phone){
+                
+                    padding: .2rem;
+                   
+                }
             }
         }
     }
