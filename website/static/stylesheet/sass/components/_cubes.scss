@@ -2,10 +2,13 @@
     position: relative;
     transition: 5s ease-out;
     z-index: 5rem;
+    top: 200rem;
 
     @include res(phone) {
         transform: translateY(-50rem);
         padding: auto 3rem;
+        width: 80%;
+        height: 80%;
     }
 
 
@@ -28,40 +31,38 @@
 
         &:hover {
             transform: translate(8rem, 5rem);
-            
-        }
-    
-        &:active{
+
         }
     }
 
     &__cube2 {
-        width: 10rem;
-        height: 10rem;
+        width: 9rem;
+        height: 9rem;
         transition: 5s ease-out;
         background-image: linear-gradient(#667eeabe, #764ba2b4);
         transform: rotate(103deg);
         position: absolute;
-        top: 6vh;
-        left: 9%;
+        top: -370vh;
+        left: 30%;
         box-shadow: 0.2rem 0.1rem 1rem grey;
+        z-index: 7;
 
         @include res(phone) {
+            top: 800vh;
+            left: 12%;
+            width: 3rem;
+            height: 3rem;
 
-            top: 690vh;
-            left: -25%;
-
+            
         }
 
         &:hover {
-             transform: translate(8rem, 5rem);
-            
+            transform: translate(8rem, 5rem);
         }
-    
-        &:active{
-    
-        }
+
+
     }
+
 
     &__cube3 {
         width: 3rem;
@@ -71,18 +72,19 @@
         transform: rotate(23deg);
         position: absolute;
         box-shadow: 0.2rem 0.1rem 1rem grey;
-        top: -13vh;
+        top: -400vh;
         left: 0;
 
         @include res(phone) {
             top: 111vh;
             left: 0rem;
         }
+
         &:hover {
             transform: translate(8rem, 5rem);
-            
+
         }
-    
+
     }
 
     &__cube4 {
@@ -98,10 +100,10 @@
 
         &:hover {
             transform: translate(8rem, 5rem);
-       
+
         }
-    
-       
+
+
     }
 
     &__cube5 {
@@ -115,16 +117,16 @@
         top: 99vh;
         left: 62%;
 
-        @include res(phone){
+        @include res(phone) {
             top: 631vh;
             left: 62%;
         }
 
         &:hover {
             transform: translate(8rem, 5rem);
-            
+
         }
-  
+
     }
 
 
