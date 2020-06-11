@@ -56,10 +56,11 @@
         animation: blob 7s ease-in-out;
         animation-iteration-count: infinite;
 
-        @include res(tab-port){
+        @include res(tab-port) {
             position: absolute;
-    right: 0;
-    top: 69rem;
+            top: 206rem;
+            left: 1rem;
+            right: 0rem;
         }
     }
 
@@ -77,10 +78,10 @@
 
             width: 87%;
             position: absolute;
-            top: 150rem;
+            top: 57rem;
             animation: blob 7s ease-in-out;
             animation-iteration-count: infinite;
-            left: 0rem;
+            left: 1rem;
         }
     }
 }

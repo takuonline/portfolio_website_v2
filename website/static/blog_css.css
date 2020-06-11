@@ -106,27 +106,30 @@ font-size: 2rem;
   left: 50%;
 } */
 .user-post-pic{
-  width: 31%;
-
+  width: 100%;
+  max-width: 40% !important;
   margin-right: 3rem;
+  float: left;
 }
 .user-post-header{
   width: 75%;
-  /* position: absolute;
-  left: 14rem;
-  top: 4rem; */
   margin-right: 0;
 }
 
 .user-post-text{
   width: 75%;
-  /* position: absolute;
-  left: 14rem;
-  top: 10rem; */
+
 }
 
 .user-post-profile{
   width: max-content;
+}
+
+.pic-and-pro{
+  max-width: fit-content;
+  max-height: fit-content;
+  display: flex;
+justify-content: center;
 }
 
 .blog-post{
@@ -135,6 +138,8 @@ padding: 2rem;
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
+height: fit-content;
+font-size: 90%;
 } 
 
 

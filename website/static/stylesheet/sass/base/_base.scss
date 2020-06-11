@@ -5,6 +5,6 @@ body {
   position: relative;
 
   @include res(tab-port){
-    overflow-x: hidden; 
+    // overflow-x: hidden; 
   }
 }
