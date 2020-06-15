@@ -76,8 +76,8 @@
         left: 0;
 
         @include res(phone) {
-            top: 111vh;
-            left: 0rem;
+            top: -31vh;
+            left: 7rem;
         }
 
         &:hover {

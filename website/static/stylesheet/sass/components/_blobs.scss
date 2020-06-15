@@ -65,7 +65,7 @@
 
         @include res(tab-port) {
             position: absolute;
-            top: 206rem;
+            top: 210rem;
             left: 1rem;
             right: 0rem;
         }
@@ -82,10 +82,9 @@
 
         @include res(phone) {
             opacity: 70%;
-
             width: 87%;
             position: absolute;
-            top: 57rem;
+            top: 79rem;
             animation: blob 7s ease-in-out;
             animation-iteration-count: infinite;
             left: 1rem;

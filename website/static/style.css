@@ -49,6 +49,7 @@ COMPONENTS
     /* transform: rotate(0deg); */ } }
 
 body {
+  background-color: lightgrey !important;
   font-family: "Lato", serif;
   font-size: 1rem;
   position: relative; }
@@ -313,7 +314,7 @@ body {
     @media (max-width: 56.25em) {
       .blobs__blob2 {
         position: absolute;
-        top: 206rem;
+        top: 210rem;
         left: 1rem;
         right: 0rem; } }
   .blobs__blob3 {
@@ -329,7 +330,7 @@ body {
         opacity: 70%;
         width: 87%;
         position: absolute;
-        top: 57rem;
+        top: 79rem;
         animation: blob 7s ease-in-out;
         animation-iteration-count: infinite;
         left: 1rem; } }
@@ -392,8 +393,8 @@ body {
     left: 0; }
     @media (max-width: 37.5em) {
       .cubes__cube3 {
-        top: 111vh;
-        left: 0rem; } }
+        top: -31vh;
+        left: 7rem; } }
     .cubes__cube3:hover {
       transform: translate(8rem, 5rem); }
   .cubes__cube4 {
@@ -1229,7 +1230,7 @@ footer {
       padding-left: 1rem; } }
   @media (max-width: 37.5em) {
     .section-namebox {
-      padding-top: 0; } }
+      padding: 1rem; } }
 
 .section-projects {
   padding-left: 0;
@@ -1246,6 +1247,7 @@ footer {
       padding: .7rem; } }
   @media (max-width: 37.5em) {
     .section-ai {
+      margin-top: 0;
       padding: .2rem; } }
 
 .section-about {

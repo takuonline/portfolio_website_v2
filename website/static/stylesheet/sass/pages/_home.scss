@@ -85,7 +85,7 @@
     padding-left: 1rem;
   }
   @include res(phone) {
-    padding-top: 0;
+    padding: 1rem;
 
   }
 }
@@ -116,7 +116,8 @@
     padding: .7rem;
 }
   @include res(phone){
-                    
+  margin-top: 0;
+                  
     padding: .2rem;
 }
 
