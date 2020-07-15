@@ -1,7 +1,8 @@
-from flask import Blueprint,render_template,redirect,url_for
+from flask import Blueprint, render_template, redirect, url_for
 
 
-drumkit=Blueprint("drum",__name__)
+drumkit = Blueprint("drum", __name__)
+
 
 @drumkit.route("/drums")
 def drum_app():

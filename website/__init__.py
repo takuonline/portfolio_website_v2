@@ -1,4 +1,4 @@
-#website/__init__.py
+# website/__init__.py
 from flask import Flask
 from website.dictionary.views import dict_app
 from website.core_app.views import core_app
@@ -17,19 +17,21 @@ from flask_login import LoginManager
 #####(Flask app setup)##########
 ################################
 
-app=Flask(__name__)
-app.config["SECRET_KEY"]="mysecret"
+app = Flask(__name__)
+app.config["SECRET_KEY"] = "mysecret"
 
 ################################
 #####(Database setup)###########
 ################################
 
 basedir = os.path.abspath(os.path.dirname(__file__))
-app.config["SQLALCHEMY_DATABASE_URI"]="sqlite:///"+ os.path.join(basedir, "data.sqlite")
+app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///" + os.path.join(
+    basedir, "data.sqlite"
+)
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
-db=SQLAlchemy(app)
-Migrate(app,db)
+db = SQLAlchemy(app)
+Migrate(app, db)
 
 #####################################
 ######(Blueprint registering)########
@@ -56,13 +58,12 @@ from website.blog.core.views import core
 from website.blog.error_pages.handlers import error_pages
 from website.blog.blog_posts.views import blog_posts
 
-#registering blog blueprints
+# registering blog blueprints
 
 app.register_blueprint(blog_posts)
 app.register_blueprint(core)
 app.register_blueprint(error_pages)
 app.register_blueprint(users)
-app.static_folder = 'static'
+app.static_folder = "static"
 
 ####################################################################################
-

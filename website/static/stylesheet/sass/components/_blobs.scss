@@ -5,8 +5,7 @@
     max-width: 66%;
     z-index: -4;
     top: -44rem;
-
-   
+    fill: #a683e3;
 
 
 
@@ -32,7 +31,7 @@
         animation-iteration-count: infinite;
         transition: 5s ease-out;
         left: 29rem;
-
+        display: none;
         &:not(last-child) {
             margin-bottom: 20rem;
         }
@@ -79,6 +78,7 @@
         animation: blob 7s ease-in-out;
         animation-iteration-count: infinite;
         left: 15rem;
+        display: none;
 
         @include res(phone) {
             opacity: 70%;
@@ -89,5 +89,24 @@
             animation-iteration-count: infinite;
             left: 1rem;
         }
+    }
+}
+
+
+.myblob{
+    z-index: -5;
+    position: absolute;
+    top: 2rem;
+    right: 8rem;
+    opacity: 20%;
+    animation: blob 7s ease-in-out;
+    animation-iteration-count: infinite;
+    width: 72%;
+
+    @include res(phone){
+        top: 11rem;
+        right: 1rem;
+        opacity: 12%;
+        width: 100%;
     }
 }

@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head>
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8" name="viewport" content="width=device-width, user-scalable=no">
 
@@ -10,7 +11,7 @@
   
     <!-- Static files -->
   <link rel="stylesheet" href="/static/style.css">
-
+ 
   <!-- google fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
@@ -73,15 +74,19 @@
 
   <nav class="mynavbar">
     <!-- <a class="#" href="{{url_for("core_app.home")}}"> <img class="logo" src="../static/logo/logo.png" alt="Logo"></a> -->
-    <div  class="logo" > <a  href="{{url_for("core_app.home")}}">Taku</a>  </div>
+    <a class="logo" href="{{url_for("core_app.home")}}">Taku</a>  
    
-    <ul class="nav-list">
+    <ul class="mynavbar__list">
+      
       
       <li>
-        <a class=" navbar-custom" href="{{url_for("core_app.home")}}">Home</a>
+        <a class="mynavbar__list-navbar-item navbar-item--1" href="{{url_for("core_app.home")}}">Home</a>
       </li>
       <li>
-        <a class=" navbar-custom" href="{{url_for("core_app.contact")}}">Contact</a>
+        <a class="mynavbar__list-navbar-item navbar-item--2" href="#about">About Me</a>
+      </li>
+      <li>
+        <a class="mynavbar__list-navbar-item navbar-item--3" href="{{url_for("core_app.contact")}}">Contact</a>
       </li>
       <li>
         <a class=" nav-myblog" href="{{url_for("core.index")}}">My blog</a>

@@ -2,6 +2,7 @@
 {%block content%}
 
 
+
 <main class="main">
 
   <section class="section-namebox">
@@ -14,7 +15,6 @@
       <p class="namebox__description">Apart from designing this website you can check out my other projects below. <br>
         If you like anything on my site, just want to say hi, or want to offer some advice you are free to
         hit me up anytime</p>
-      
 
 
       <a href="{{url_for("core.index")}}" class="namebox__blog-btn">My blog →</a>
@@ -28,18 +28,18 @@
     <div class="blobs">
 
       <svg viewBox="60 55 120 120" class="blobs__blob1" xmlns="http://www.w3.org/2000/svg">
-        <path fill="#a683e3"
+        <path
           d="M8.6,-14.7C12.1,-11.1,16.5,-10.3,30.8,-6.1C45.1,-1.9,69.3,5.8,70.6,11.5C71.8,17.1,50.1,20.8,37.5,28.8C24.9,36.8,21.4,49,13.7,55.1C6.1,61.1,-5.9,60.9,-14.6,55.7C-23.4,50.4,-28.9,40.2,-27.2,30.2C-25.5,20.3,-16.5,10.7,-18.1,2.3C-19.8,-6,-32,-13.1,-36.1,-21.6C-40.2,-30.1,-36.1,-40,-28.7,-41.8C-21.4,-43.6,-10.7,-37.4,-4.1,-31.1C2.6,-24.8,5.1,-18.3,8.6,-14.7Z"
           transform="translate(100 100)" />
       </svg>
 
       <svg class="blobs__blob2" viewBox="60 55 120 120" xmlns="http://www.w3.org/2000/svg">
-        <path fill="#a683e3"
+        <path
           d="M21,-34C25.3,-34,25.4,-24.4,35.8,-17.1C46.1,-9.8,66.8,-4.9,66.2,-0.3C65.7,4.3,44,8.6,32.9,14.6C21.8,20.6,21.4,28.4,17.6,31.3C13.9,34.1,7,32,-0.1,32.2C-7.2,32.4,-14.4,34.8,-16.8,31.3C-19.3,27.7,-17,18.1,-16.6,11.9C-16.1,5.6,-17.6,2.8,-20.2,-1.5C-22.8,-5.8,-26.6,-11.7,-27.8,-19.2C-28.9,-26.8,-27.5,-36,-22.5,-35.6C-17.4,-35.1,-8.7,-25,-0.2,-24.7C8.4,-24.4,16.8,-34,21,-34Z"
           transform="translate(100 100)" />
       </svg>
       <svg class="blobs__blob3" viewBox="35 50 120 120" xmlns="http://www.w3.org/2000/svg">
-        <path fill="#a683e3"
+        <path
           d="M24.6,-42.8C36.1,-36,52.5,-37.9,61.5,-32.2C70.6,-26.5,72.2,-13.3,65,-4.1C57.9,5,41.9,10,32.5,14.9C23,19.8,20,24.6,15.6,30.1C11.3,35.6,5.6,41.9,-1.7,44.8C-9,47.7,-18,47.2,-20.1,40.4C-22.3,33.6,-17.6,20.6,-22.8,12.8C-28.1,5,-43.1,2.5,-44.7,-0.9C-46.4,-4.4,-34.6,-8.8,-28.6,-15.3C-22.7,-21.9,-22.7,-30.6,-18.9,-41.8C-15.2,-53,-7.6,-66.7,-0.5,-65.8C6.6,-64.9,13.1,-49.5,24.6,-42.8Z"
           transform="translate(100 100)" />
       </svg>
@@ -57,12 +57,109 @@
     </div>
   </section>
 
-
+  <img src="../static/Asset2@3x.png" class="myblob" alt="">
 
   <section class="section-projects">
     <h1 class="about__header pl-0 ">Web applications</h1>
-    <div class="myrow w-100 mr-6 projects">
 
+
+    <div class="mycards">
+
+
+      <div class="card">
+
+        <div class="card__side card__side--front-1 card__side--front">
+          <h4 class="card__header">
+            <span class="card__heading-span--1 card__heading-span">Face blur app</span>
+          </h4>
+        </div>
+
+        <div class="card__side card__side--back card__side--back-1">
+          <div class="card__cta">
+            <p class="card__side-description">Built using the Opencv python library, this app can detect faces
+              and blur them </p>
+          </div>
+          <a href="{{url_for("face_app.face_blur")}}">
+            <div class="card__side-btn">
+              Try out!!
+            </div>
+          </a>
+        </div>
+
+      </div>
+
+
+      <div class="card">
+
+        <div class="card__side card__side--front-2 card__side--front">
+          <h4 class="card__header">
+            <span class="card__heading-span--1 card__heading-span">Dictionary app</span>
+          </h4>
+        </div>
+
+        <div class="card__side card__side--back card__side--back-1">
+          <div class="card__cta">
+            <p class="card__side-description">A nifty dictionary application you can use to look up english
+              words </p>
+          </div>
+          <a href="{{url_for("dict.dictionary")}}">
+            <div class="card__side-btn">
+              Try out!!
+            </div>
+          </a>
+        </div>
+
+      </div>
+
+
+      <div class="card">
+
+        <div class="card__side card__side--front-3 card__side--front">
+          <h4 class="card__header">
+            <span class="card__heading-span--1 card__heading-span">Drumkit App</span>
+          </h4>
+        </div>
+
+        <div class="card__side card__side--back card__side--back-1">
+          <div class="card__cta">
+            <p class="card__side-description">A drumkit application you can use play drums </p>
+          </div>
+          <a href="{{url_for("drum.drum_app")}}" class="projects__link">
+            <div class="card__side-btn">
+              Play!!
+            </div>
+          </a>
+        </div>
+
+      </div>
+
+
+      <div class="card">
+
+        <div class="card__side card__side--front-4 card__side--front">
+          <h4 class="card__header">
+            <span class="card__heading-span--1 card__heading-span">Real/fake news classifier </span>
+          </h4>
+        </div>
+
+        <div class="card__side card__side--back card__side--back-1">
+          <div class="card__cta">
+            <p class="card__side-description">This Machine learning model can classify news articles in to
+              Fake or real </p>
+          </div>
+          <a href="{{url_for("news.news_app")}}">
+            <div class="card__side-btn">
+              Try out!!
+            </div>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="myrow w-100 mr-6 projects">
       <div class="col-1-of-2 col-1-of-4 ">
         <a href="{{url_for("face_app.face_blur")}}" class="projects__link">
           <div class="projects__faceapp ">
@@ -113,17 +210,17 @@
 
 
   <section class="section-ai">
-<h1 class="ai-header">Machine learning and AI</h1>
-<div class="ai-para">
+    <h1 class="ai-header">Machine learning and AI</h1>
+    <div class="ai-para">
 
-<p>Welcome to the Machine learning section. 
-  This is a collection of all my Jupyter notebook files
+      <p>Welcome to the Machine learning section.
+        This is a collection of all my Jupyter notebook files
 
-<p>In this section l have compiled some of the projects that l have done in the past that have something
-  to do with Machine learning, data science and AI. </p>
-<p>You will find the links to each of the projects below </p>
+        <p>In this section l have compiled some of the projects that l have done in the past that have something
+          to do with Machine learning, data science and AI. </p>
+        <p>You will find the links to each of the projects below </p>
 
-</div>
+    </div>
     <div class="ai">
 
 
@@ -137,8 +234,8 @@
           <a href="{{url_for("ml_files.titanic")}}" class="#">
             <div class="ai__model--1-h">Titanic dataset</div>
             <div class="ai__model--1-p">This is a very famous data set and was one on my first
-               first steps into machine learning!
-               l'll be trying to classify members of the titanic crew into two classes, that is 
+              first steps into machine learning!
+              l'll be trying to classify members of the titanic crew into two classes, that is
               survival or deceased.
               This dataset is hosted directly on Kaggle.</div>
           </a>
@@ -148,11 +245,11 @@
           <a href="{{url_for("ml_files.log_project")}}" class="#">
             <div class="ai__model--2-h">Logistic Project</div>
             <div class="ai__model--2-p">
-            In this project l was working with advertising data and trying to create a 
-            model that will predict 
-            whether or not customers will click on an ad based off the features of that user
-          
-          Pretty cool, right??</div>
+              In this project l was working with advertising data and trying to create a
+              model that will predict
+              whether or not customers will click on an ad based off the features of that user
+
+              Pretty cool, right??</div>
           </a>
         </div>
       </div>
@@ -163,20 +260,20 @@
 
       <div class="ai__model">
         <div class="ai__model--header">Supervised learning</div>
-        <div class="ai__model--para">Supervised learning is the machine learning 
+        <div class="ai__model--para">Supervised learning is the machine learning
           task of learning a function that maps an input to an output based on
-           example input-output pairs </div>
+          example input-output pairs </div>
 
         <div class="ai__model--1">
           <a href="{{url_for("ml_files.forest_project")}}" class="#">
             <div class="ai__model--1-h">Random Forest and Decision trees Project</div>
             <div class="ai__model--1-p">
               Creating a model that will help
-               predict whether a person will pay back money borrowed or not. This information 
-               is very useful to investors as they  
+              predict whether a person will pay back money borrowed or not. This information
+              is very useful to investors as they
               would want to invest in people who showed a profile of having a high pro
-              bability of paying you back. 
-      </div>
+              bability of paying you back.
+            </div>
           </a>
         </div>
 
@@ -194,22 +291,22 @@
 
       <div class="ai__model">
         <div class="ai__model--header">Natural Language Processing</div>
-        <div class="ai__model--para">This is one of my favourite uses of machine learning. 
+        <div class="ai__model--para">This is one of my favourite uses of machine learning.
           It can be used in a lot of ways and the examples
-           below are just the tip of the iceberg
+          below are just the tip of the iceberg
         </div>
 
-          
+
 
         <div class="ai__model--1">
           <a href="{{url_for("ml_files.nlp")}}" class="#">
-            <div class="ai__model--1-h">Spam/non-spam  messege classifier</div>
+            <div class="ai__model--1-h">Spam/non-spam messege classifier</div>
             <div class="ai__model--1-p">
               Here l try to create a model that can classify text messages
               messages into spam and "Ham".
-              The reason why you dont receive too many spam messages in your 
-              inbox or email account these days is mostly because of nlp classifiers. 
-         
+              The reason why you dont receive too many spam messages in your
+              inbox or email account these days is mostly because of nlp classifiers.
+
             </div>
           </a>
         </div>
@@ -218,7 +315,7 @@
           <a href="{{url_for("ml_files.nlp_project")}}" class="#">
             <div class="ai__model--2-h">NLP Project- Yelp reveiw data</div>
             <div class="ai__model--2-p">
-              Here l create a model based on Yelp review data to try and determine whether a 
+              Here l create a model based on Yelp review data to try and determine whether a
               review is 1/5 star(s).
             </div>
           </a>
@@ -228,15 +325,15 @@
 
       <div class="ai__model">
         <div class="ai__model--header">Recommender Systems</div>
-        <div class="ai__model--para">  Have you ever wondered how Netflix is able to some
-           degree of accuracy "Recommend" a good movie for you.
-          We have all encountered one or more uses of the recomender systems in our 
+        <div class="ai__model--para"> Have you ever wondered how Netflix is able to some
+          degree of accuracy "Recommend" a good movie for you.
+          We have all encountered one or more uses of the recomender systems in our
           lifes. Below you will find a simple implementaion of a recommender systems</div>
 
-          <!-- Recommender systems -->
+        <!-- Recommender systems -->
 
         <div class="ai__model--1">
-          <a href="{{url_for("ml_files.recommender")}}" >
+          <a href="{{url_for("ml_files.recommender")}}">
             <div class="ai__model--1-h">Movie Recommender</div>
             <div class="ai__model--1-p">
               A model than can recommend movies for you
@@ -255,13 +352,13 @@
 
       <div class="ai__model">
         <div class="ai__model--header">Deep learning</div>
-        <div class="ai__model--para">Deep learning is a subset of machine learning in 
-          artificial intelligence (AI) that has networks capable of learning 
-          unsupervised from data that is 
+        <div class="ai__model--para">Deep learning is a subset of machine learning in
+          artificial intelligence (AI) that has networks capable of learning
+          unsupervised from data that is
           unstructured or unlabeled. Also known as deep neural
-           learning or deep neural network</div>
+          learning or deep neural network</div>
 
-          <!-- Deep learning -->
+        <!-- Deep learning -->
 
         <div class="ai__model--1">
           <a href="{{url_for("ml_files.tf")}}" class="">
@@ -282,19 +379,20 @@
       <div class="ai__model">
         <div class="ai__model--header">Unsupervised</div>
         <div class="ai__model--para">
-          Unsupervised learning is a machine learning technique, 
-          where you do not need to supervise the model. 
+          Unsupervised learning is a machine learning technique,
+          where you do not need to supervise the model.
           Instead, you need to allow the model to work on its own
-           to discover information.
-          </div>
+          to discover information.
+        </div>
 
-          <!-- Unsupervised -->
+        <!-- Unsupervised -->
 
         <div class="ai__model--1">
           <a href="{{url_for("ml_files.k_means_project")}}" class="#">
             <div class="ai__model--1-h">K-means clustering</div>
             <div class="ai__model--1-p">Given just a set of features,
-               a model is created to attempt to use KMeans Clustering to cluster Universities into two groups, Private and Public.
+              a model is created to attempt to use KMeans Clustering to cluster Universities into two groups, Private
+              and Public.
 
             </div>
           </a>
@@ -303,15 +401,15 @@
         <div class="ai__model--2">
           <a href="{{url_for("ml_files.pca")}}" class="#">
             <div class="ai__model--2-h">Principal component analysis</div>
-            <div class="ai__model--2-p"> A demostration of how the PCA 
-              can be used to reduce the number of features to a given data set whilst keeping the 
-            infomation intacked  </div>
+            <div class="ai__model--2-p"> A demostration of how the PCA
+              can be used to reduce the number of features to a given data set whilst keeping the
+              infomation intacked </div>
           </a>
         </div>
       </div>
 
-     </div>
-    
+    </div>
+
 
 
   </section>
@@ -325,7 +423,7 @@
       <h1 class="about__header">About Me</h1>
 
       <div class="about__profile">
-        <img class="about__profile--img" src="../static/Adobe_pics/face.png" alt="Profile pics">
+        <img class="about__profile--img" src="../static/pic_clipped.png" alt="Profile pics">
         <div class="about__profile--text">
           <h3 class="text-success">Profile</h3>
           <p>Self-motivated university student with a record of academic and extracurricular success studying Bcom
@@ -339,46 +437,159 @@
 
 
       <div class="about__coding">
-        <div class="about__coding--text">
-          <div class="about__coding--text-header">Coding</div>
-          <p>In my spare time l have decided to take in upon myself to learn how to code online and l am able to using
-            Python
-            and SQL (database query language).
-            I decided to keep myself relevant in a world that keeps advancing in technology. In doing so l sort to
-            differentiate
-            myself.
-            Common task l can do include:</p>
-          <ul>
-            <li>Data visualisation (using matplotlib, pandas, seaborn)</li>
-            <li>Machine learning and data sciences</li>
-            <li>Automation</li>
-            <li>web scraping</li>
-            <li>GUI development</li>
-            <li>web development: </li>
-          </ul>
-          <p>I also learnt SQL and can query from a database.</p>
+        <div class="about__coding--img">
         </div>
-      </div>
-    </div>
+          <div class="about__coding--text">
+            <div class="about__coding--text-header">Coding</div>
+            <div class="about__coding--text-description">
+              <p>In my spare time l have decided to take in upon myself to learn how to code online and l am able to
+                using
+                Python
+                and SQL (database query language).
+                I decided to keep myself relevant in a world that keeps advancing in technology. In doing so l sort to
+                differentiate
+                myself.
+                Common task l can do include:</p>
+              <ul>
+                <li>Data visualisation (using matplotlib, pandas, seaborn)</li>
+                <li>Machine learning and data sciences</li>
+                <li>Automation</li>
+                <li>web scraping</li>
+                <li>GUI development</li>
+                <li>web development: </li>
+              </ul>
+              <p>I also learnt SQL and can query from a database.</p>
+            </div>
+          </div>
 
-    <div class="about__design">
-      <!-- <img src="../static/accounting.jpg" alt="design image" class="about__design--img"> -->
-      <div class="about__design--text">
-        <div class="about__design--header">Designing</div>
-        <p>Besides coding l also love graphics designing works and motion graphics. For this l use the following
-          software:
-        </p>
-        <ul>
-          <li>Adobe Photoshop</li>
-          <li>Illustrator</li>
-          <li>After effects</li>
-          <li>And PowerPoint</li>
-        </ul>
-        <!-- <div class="about__design--text-blog-btn"><a href="#">My design works</a></div> -->
+
+          <!-- about coding technologies list -->
+
+
+
+
+
       </div>
 
-    </div>
-    </div>
+      
+
+      <div class="about__coding-items">
+        <h3 class="about__coding-stack-header">Machine learning</h3>
+        <div class="about__coding-stack">
+
+          <div class="about__coding-item">
+            <img src="../static/skills-icons/py-icon.png" alt="icon" class="about__coding-item-img">
+            <div class="about__coding-item-header">Python</div>
+          </div>
+
+          <div class="about__coding-item">
+            <img src="../static/skills-icons/tf-icon.png" alt="icon" class="about__coding-item-img">
+            <div class="about__coding-item-header">Tensorflow</div>
+          </div>
+
+          <div class="about__coding-item">
+            <img src="../static/skills-icons/keras-icon.png" alt="icon" class="about__coding-item-img">
+            <div class="about__coding-item-header">Keras </div>
+          </div>
+
+          <div class="about__coding-item">
+            <img src="../static/skills-icons/sklearn-icon.png" alt="icon" class="about__coding-item-img">
+            <div class="about__coding-item-header">Sci-learn</div>
+          </div>
+
+        </div>
+
+        <h3 class="about__coding-stack-header">Web development</h3>
+        <div class="about__coding-stack">
+
+
+          <div class="about__coding-item">
+            <img src="../static/skills-icons/flask-icon.png" alt="icon" class="about__coding-item-img">
+            <div class="about__coding-item-header">Flask</div>
+          </div>
+
+          <div class="about__coding-item">
+            <img src="../static/skills-icons/css-icon.png" alt="icon" class="about__coding-item-img">
+            <div class="about__coding-item-header">Css</div>
+          </div>
+
+          <div class="about__coding-item">
+            <img src="../static/skills-icons/html-icon.png" alt="icon" class="about__coding-item-img">
+            <div class="about__coding-item-header">Html</div>
+          </div>
+
+          <div class="about__coding-item">
+            <img src="../static/skills-icons/js-icon.png" alt="icon" class="about__coding-item-img">
+            <div class="about__coding-item-header">Javascript</div>
+          </div>
+
+          <div class="about__coding-item">
+            <img src="../static/skills-icons/bs4-icon.png" alt="icon" class="about__coding-item-img">
+            <div class="about__coding-item-header">Bootstrap 4</div>
+          </div>
+
+
+        </div>
+
+        <h3 class="about__coding-stack-header">Other technologies</h3>
+        <div class="about__coding-stack">
+
+
+          <div class="about__coding-item">
+            <img src="../static/skills-icons/java-icon.png" alt="icon" class="about__coding-item-img">
+            <div class="about__coding-item-header">Java</div>
+          </div>
+
+          <div class="about__coding-item">
+            <img src="../static/skills-icons/node-icon.png" alt="icon" class="about__coding-item-img">
+            <div class="about__coding-item-header">Node</div>
+          </div>
+
+          <div class="about__coding-item">
+            <img src="../static/skills-icons/github-icon.png" alt="icon" class="about__coding-item-img">
+            <div class="about__coding-item-header">Github</div>
+          </div>
+
+
+        </div>
+
+        <h3 class="about__coding-stack-header">Mobile App development</h3>
+        <div class="about__coding-stack">
+
+          <div class="about__coding-item">
+            <img src="../static/skills-icons/dart-icon.png" alt="icon" class="about__coding-item-img">
+            <div class="about__coding-item-header">Dart</div>
+          </div>
+
+          <div class="about__coding-item">
+            <img src="../static/skills-icons/flutter-icon.png" alt="icon" class="about__coding-item-img">
+            <div class="about__coding-item-header">Flutter</div>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- about section the designs -->
+
+      <div class="about__design">
+        
+        <div >  <img  class="about__design--img" src="../static/images/deer.jpg" alt="About section designs"></div>
+          <div class="about__design--text">
+            <div class="about__design--header">Designing</div>
+            <p>Besides coding l also love graphics designing works and motion graphics. For this l use the following
+              software:
+            </p>
+            <ul>
+              <li>Adobe Photoshop</li>
+              <li>Illustrator</li>
+              <li>After effects</li>
+              <li>And PowerPoint</li>
+            </ul>
+          </div>
+        
+
+        
+      </div>
   </section>
 
 
@@ -399,37 +610,25 @@
 
 </main>
 <footer class="my-footer">
-  
+
   Made with 💖 by Takudzwa Makusha
-  <p>©Copyright 2020 All rights reserved</p>
+  <p>©Copyright 2020. All rights reserved</p>
 
- 
-   
-      <ul class="my-footer__list-1">
-        <li class="f-item"><a href="{{url_for("core_app.contact")}}">Contact</a></li>
-        <li class="f-item" ><a href="{{url_for("core.index")}}">My Blog</a></li>
-        <li class="f-item"><a href="#about">About me</a></li>
-      </ul>
- 
-
-      <ul class="my-footer__list-2">  
-        <p class="f-item-1" >Special thank to:</p>
-       <li class="f-item-1">Jose portilla</li>
-       <li class="f-item-1">person</li>
-       <li class="f-item-1">Person 2 </li>
-       <li class="f-item-1" >person</li>
-       <li class="f-item-1">Angela Yu </li>
-     </ul>
-    
- 
-
-  
-
-   
+  <ul class="my-footer__list-1">
+    <li class="f-item"><a href="{{url_for("core_app.contact")}}">Contact</a></li>
+    <li class="f-item"><a href="{{url_for("core.index")}}">My Blog</a></li>
+    <li class="f-item"><a href="#about">About me</a></li>
+  </ul>
 
 
-
-   
+  <ul class="my-footer__list-2">
+    <p class="f-item-1">Special thank to:</p>
+    <li class="f-item-1">Jose portilla</li>
+    <li class="f-item-1">Pixabay</li>
+    <li class="f-item-1">Jonas </li>
+    <li class="f-item-1">person</li>
+    <li class="f-item-1">Angela Yu </li>
+  </ul>
 
 </footer>
 {% endblock %}

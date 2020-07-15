@@ -6,7 +6,6 @@
 
     @include res(tab-port) {
         margin-top: 7rem;
-
     }
 
     @include res(phone) {
@@ -14,7 +13,7 @@
         margin-top: 0;
         margin-right: 0;
     }
-  
+
 
 
     &__header {
@@ -24,30 +23,29 @@
         font-size: 3.7rem;
 
         @include res(tab-port) {
-            margin-bottom: 2rem ;
+            margin-bottom: 2rem;
             padding-left: 1rem;
 
         }
 
         @include res(phone) {
             margin: 0;
-
         }
     }
 
     &__profile {
-        margin-bottom: 6rem;
+        margin-bottom: 12rem;
 
         &--img {
-            display: inline-block;
             width: 23%;
             border-radius: .2rem;
-
+            float: right;
 
             @include res(tab-port) {
                 width: 35%;
                 padding-left: 1rem;
             }
+
             @include res(phone) {
                 width: 75%;
             }
@@ -55,11 +53,11 @@
         }
 
         &--text {
-
             padding: 2rem;
+            padding-left: 0;
 
             display: inline-block;
-            width: 65%;
+            width: 55%;
             font-size: 1.1rem;
 
             @include res(tab-port) {
@@ -86,75 +84,111 @@
     &__coding {
         position: relative;
         width: 100%;
-        max-width: 100%;
-        height: auto;
+        height: 50rem;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
 
+      
+
+        @include res(tab-port) {
+            height: 60rem;
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            margin: 5rem auto;
+            z-index: 2;
+        }
+
+
+        // background-image: linear-gradient(to right bottom, #000000b4, #494949b6), url(../static/images/code.jpg);
+        @include res(phone) {
+            height: 60rem;
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            margin: 5rem auto;
+        }
+
+        &--img {
+            height: 37rem;
+            width: 78%;
+            z-index: -1;
+            background-image: linear-gradient(to right bottom, #0000008c, #00000096), url(../static/images/code.jpg);
+            background-repeat: no-repeat;
+
+            @include res(tab-port) {
+                height: 42%;
+                width: 66%;
+                 z-index: 1;
+                background-image: linear-gradient(to right bottom, #0000008c, #00000096), url(../static/images/code.jpg);
+                background-repeat: no-repeat;
+                position: absolute;
+                left: 0;
+                top: 6rem;
+                background-size: 130%;
+            }
+
+
+
+            @include res(phone) {
+                height: 28%;
+                position: absolute;
+                z-index: 1;
+                left: 0;
+                background-size: 170%;
+                -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            }
+
+        }
 
         &--text {
+            position: absolute;
+            top: 13rem;
+            left: 25rem;
             display: inline-block;
-            width: 100%;
-            background-image: linear-gradient(to right bottom, #0000006c, #4949495d), url(../static/images/code.jpg);
-            -webkit-clip-path: polygon(0 0, 100% 13%, 379% 19%, 0 100%);
-            clip-path: polygon(0 0, 100% 13%, 379% 19%, 0 100%);
-            height: 37rem;
-            padding: 5rem;
+            width: 65%;
+            height: 33rem;
+            padding: 2rem;
             color: white;
-            padding-right: 24rem;
-            margin-bottom: 3rem;
-            padding-left: 9rem;
+            background-image: linear-gradient(to right bottom, #06beb5, #00d2ee);
 
             @include res(tab-port) {
                 background-size: cover;
                 display: inline-block;
                 left: 0rem;
                 width: 100%;
-                height: 34rem;
                 margin: 0px auto;
                 padding: 2rem;
-                color: #dee2e6;
+                color: #222;
                 text-align: left;
-                -webkit-clip-path: polygon(0 8%, 100% 0%, 100% 92%, 0 100%);
-                clip-path: polygon(0 8%, 100% 0%, 100% 92%, 0 100%);
                 width: 100%;
                 padding-top: 5rem;
-                
-    
+                z-index: -1;
+                top: 24rem;
+                border: 20px solid white;
+
+
             }
 
             @include res(phone) {
-                background-size: cover;
-                display: inline-block;
-                left: 0rem;
-                width: 100%;
-                height: 37rem;
-                margin: 0px auto;
-                padding: 2rem;
-                color: #dee2e6;
-                text-align: left;
-                -webkit-clip-path: polygon(0 8%, 100% 0%, 100% 92%, 0 100%);
-                clip-path: polygon(0 8%, 100% 0%, 100% 92%, 0 100%);
-                width: 100%;
-                padding-top: 5rem;
-                
-    
-            }
-            
 
-            @include res(phone) {
-                background-size: cover;
                 display: inline-block;
                 left: 0rem;
+                top: 10rem;
                 width: 100%;
-                height: 47rem;
                 margin: 0px auto;
-                padding: 2rem;
-                color: #dee2e6;
+                padding: 1rem;
+                color: white;
                 text-align: left;
-                -webkit-clip-path: polygon(0 8%, 100% 0%, 100% 92%, 0 100%);
-                clip-path: polygon(0 8%, 100% 0%, 100% 92%, 0 100%);
                 width: 100%;
-                padding-top: 5rem;
+                padding-top: 10rem;
+                background-image: linear-gradient(to right bottom, #06beb5, #00d2ee);
+                height: 70rem;
+                z-index: -1;
+                -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+                border: 12px solid white;
             }
+
 
             &-header {
                 text-decoration: none;
@@ -163,28 +197,93 @@
                 color: green;
                 font-size: 1.7rem;
 
+                @include res(tab-port){
+                    text-align: right;
+                    padding-right: 3rem;
+                }
+
 
             }
 
 
         }
 
-        &:hover {
-            transform: translateY(.07rem);
-            transition: all .3s;
-            transform: scale(1.04);
+        &-items {
+            display: flex;
+            flex-wrap: wrap;
+            color: white;
+            border: 20px solid white;
+            margin: 0 auto;
+            margin-bottom: 5rem;
+            width: 70%;
+            @include res(tab-port){
+                width: 100%;
+                margin-bottom: 9rem;
+            }
+
+            @include res(phone) {
+                width: 100%;
+            }
+        }
+
+        &-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: .7rem 1rem;
+
+            &-img {
+                height: 2rem
+            }
+
+            &-header {}
+
+            &:hover {
+                transform: translateY(.07rem);
+                transition: all .3s;
+                transform: scale(1.07);
+
+            }
+        }
+
+        &-stack {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            flex-direction: row;
+            background-image: linear-gradient(rgba(#8d2de2, .7),
+                    rgba(#4b00e0, .7));
+
+            &-header {
+                width: 100%;
+                text-align: center;
+                font-size: 95%;
+                color: #222;
+
+                // background-color: red;
+                // align-self: flex-start;
+                // justify-self: self-end;
+            }
+
 
         }
+
+
+
     }
 
 
 
     &__design {
         position: relative;
-
         width: 100%;
+        margin-bottom: 22rem;
 
-        
+        @include res(tab-port){
+            margin-bottom: 36rem;
+        }
 
         &--header {
             color: green;
@@ -196,23 +295,40 @@
                 font-size: 1.7rem;
                 margin-bottom: 5rem;
                 margin-top: 7rem;
-
             }
 
         }
 
-        &--text {
+        &--img {
+            height: 40%;
+            width: 70%;
+            // background-image: linear-gradient(to right bottom, #000000a1, #2c2c2c5d), url(../static/images/deer.jpg);
+            margin-left: 21rem;
 
+            @include res(tab-port){
+                margin-left: 14rem;
+            }
+
+            @include res(phone) {
+                height: 40%;
+                width: 84%;
+                margin-left: 5rem;
+            }
+        }
+
+        &--text {
             display: inline-block;
-            width: 100%;
-            background-image: linear-gradient(to right bottom, #000000a1, #2c2c2c5d), url(../static/images/deer.jpg);
-            -webkit-clip-path: polygon(0 1, 110% 3%, 386% -57%, 100% 100%);
-            clip-path: polygon(0% 15%, 100% 0%, 100% 100%, 0 85%);
-            height: 31rem;
+            width: 55%;
+            /* background-image: linear-gradient(to right bottom, #000000a1, #2c2c2c5d), url(../static/images/deer.jpg); */
+            height: 70%;
             color: white;
             background-size: cover;
-            padding: 9rem;
+            padding: 3rem;
             font-size: 1.1rem;
+            background-color: purple;
+            position: absolute;
+            top: 17rem;
+            left: 5rem;
 
             @include res(tab-port) {
                 background-size: cover;
@@ -224,34 +340,39 @@
                 color: #dee2e6;
                 text-align: left;
                 -webkit-clip-path: polygon(0 8%, 100% 0%, 100% 92%, 0 100%);
-                clip-path: polygon(0 8%, 100% 0%, 100% 92%, 0 100%);
+                clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0 100%);
                 width: 100%;
+                position: absolute;
+                left: 0;
+                z-index: -1;
+                border: 20px solid lightgray;
+                top: 12rem;
             }
+
             @include res(phone) {
                 background-size: cover;
-
-                display: inline-block;
-                /* left: 0rem; */
                 width: 100%;
-                height: 39rem;
-                margin: 0 auto;
+                height: 33rem;
                 padding: 2rem;
                 color: #dee2e6;
-                /* margin-bottom: 4rem; */
                 text-align: left;
-                -webkit-clip-path: polygon(0 8%, 100% 0%, 100% 92%, 0 100%);
-                clip-path: polygon(0 8%, 100% 0%, 100% 92%, 0 100%);
                 width: 100%;
+                position: absolute;
+                left: 0rem;
+                top: 9rem;
+                z-index: -1;
+                -webkit-clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0% 100%);
+                clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0% 100%);
+                border: 12px solid white;
             }
 
 
-            &:hover {
-                transform: translateY(.05rem);
-                transition: all .3s;
-                box-shadow: 0 .5rem 2rem black;
-                transform: scale(1.04);
-
-            }
+            // &:hover {
+            //     transform: translateY(.05rem);
+            //     transition: all .3s;
+            //     box-shadow: 0 .5rem 2rem black;
+            //     transform: scale(1.04);
+            // }
 
             &-blog-btn {
                 text-decoration: underline;
