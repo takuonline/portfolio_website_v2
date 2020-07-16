@@ -102,6 +102,10 @@
     animation: blob 7s ease-in-out;
     animation-iteration-count: infinite;
     width: 72%;
+    
+    @include res(tab-port){
+        top: 10rem;
+    }
 
     @include res(phone){
         top: 11rem;

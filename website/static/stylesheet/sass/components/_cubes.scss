@@ -26,6 +26,7 @@
         @include res(phone) {
             top: 690vh;
             left: -25%;
+    
 
         }
 
@@ -78,6 +79,7 @@
         @include res(phone) {
             top: -31vh;
             left: 7rem;
+            display: none;
         }
 
         &:hover {
@@ -120,6 +122,7 @@
         @include res(phone) {
             top: 631vh;
             left: 62%;
+            display: none;
         }
 
         &:hover {

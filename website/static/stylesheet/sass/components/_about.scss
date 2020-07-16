@@ -88,7 +88,7 @@
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
         clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
 
-      
+
 
         @include res(tab-port) {
             height: 60rem;
@@ -117,7 +117,7 @@
             @include res(tab-port) {
                 height: 42%;
                 width: 66%;
-                 z-index: 1;
+                z-index: 1;
                 background-image: linear-gradient(to right bottom, #0000008c, #00000096), url(../static/images/code.jpg);
                 background-repeat: no-repeat;
                 position: absolute;
@@ -129,13 +129,15 @@
 
 
             @include res(phone) {
-                height: 28%;
-                position: absolute;
-                z-index: 1;
-                left: 0;
-                background-size: 170%;
-                -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-                clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+                height: 25%;
+    width: 82%;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    background-size: 205%;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    top: 5rem;
             }
 
         }
@@ -146,9 +148,9 @@
             left: 25rem;
             display: inline-block;
             width: 65%;
-            height: 33rem;
+    height: 55%;
             padding: 2rem;
-            color: white;
+            color: #222;
             background-image: linear-gradient(to right bottom, #06beb5, #00d2ee);
 
             @include res(tab-port) {
@@ -191,13 +193,14 @@
 
 
             &-header {
-                text-decoration: none;
                 margin-bottom: 2rem;
                 text-transform: capitalize;
-                color: green;
-                font-size: 1.7rem;
+                color: white;
+                font-size: 2rem;
+                font-weight: 600;
+                letter-spacing: 2px;
 
-                @include res(tab-port){
+                @include res(tab-port) {
                     text-align: right;
                     padding-right: 3rem;
                 }
@@ -216,7 +219,8 @@
             margin: 0 auto;
             margin-bottom: 5rem;
             width: 70%;
-            @include res(tab-port){
+
+            @include res(tab-port) {
                 width: 100%;
                 margin-bottom: 9rem;
             }
@@ -281,14 +285,16 @@
         width: 100%;
         margin-bottom: 22rem;
 
-        @include res(tab-port){
+        @include res(tab-port) {
             margin-bottom: 36rem;
         }
 
         &--header {
-            color: green;
-            font-size: 1.7rem;
+            color: yellow;
+            font-size: 2rem;
             margin-bottom: 2rem;
+            font-weight: 600;
+
 
             @include res(tab-port) {
                 color: green;
@@ -305,7 +311,7 @@
             // background-image: linear-gradient(to right bottom, #000000a1, #2c2c2c5d), url(../static/images/deer.jpg);
             margin-left: 21rem;
 
-            @include res(tab-port){
+            @include res(tab-port) {
                 margin-left: 14rem;
             }
 
@@ -359,7 +365,7 @@
                 width: 100%;
                 position: absolute;
                 left: 0rem;
-                top: 9rem;
+                top: 4rem;
                 z-index: -1;
                 -webkit-clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0% 100%);
                 clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0% 100%);

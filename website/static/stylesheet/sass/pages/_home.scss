@@ -150,6 +150,7 @@
 
 //foooter 
 .my-footer {
+  color: white;
   position: relative;
   background-color: rgb(15, 1, 24);
   text-align: center;
@@ -231,6 +232,31 @@
     }
   }
 
+  &__list-3{
+    display: flex;
+    width: 30%;
+    justify-content: center;
+
+    @include res(tab-port){
+      display: flex;
+      width: 42%;
+      /* justify-content: normal; */
+      margin-top: 3rem;
+      margin-left: 2rem;
+
+    }
+
+    @include res(phone){
+      display: flex;
+    width: 100%;
+    justify-content: normal;
+    margin-top: 2rem;
+    margin: 3rem 0rem;
+    align-items: center;
+    padding-left: 0;
+    }
+  }
+
   .f-item {
     display: inline-block;
     padding: 1rem 1rem;
@@ -248,5 +274,20 @@
       margin-bottom: 0;
       
     }
+
+    
+  }
+}
+
+.f-icon{
+  width: 65%;
+  transition: all .3s;
+  @include res(phone){
+    width: 80%;
+  }
+
+  &:hover{
+    transform: scale(1.07);
+
   }
 }

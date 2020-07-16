@@ -34,9 +34,7 @@
       <ul class="navbar-nav text-right ml-auto">
         <li class="nav-item active">
           <div class="blog-nav">
-        <li class="nav_link my-nav-items  text-light my-2  mr-1 text-decoration-none"> <a
-            class="py-2 px-4 home-btn btn-warning" href="{{url_for('core_app.home')}}">Home <span
-              class="sr-only">(current)</span></a> </li>
+      
         <!-- <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> -->
         </li>
 
@@ -60,6 +58,9 @@
         <li class="nav_link my-2 text-light my-nav-items"> <a class="nav-hover px-4 py-2"
             href="{{url_for('users.register')}}">Register</a> </li>
         {%endif%}
+        <li class="nav_link my-nav-items ml-4 text-light my-2  mr-1 text-decoration-none"> <a
+          class="py-2 px-4 home-btn btn-warning" href="{{url_for('core_app.home')}}">Home <span
+            class="sr-only">(current)</span></a> </li>
         
     </div>
     </div>
