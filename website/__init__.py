@@ -6,6 +6,7 @@ from website.blur_app.views import face_app
 from website.fakenews_app.views import news
 from website.drumkit.views import drumkit
 from website.ml_files.views import ml
+from website.simon_game.views import simon
 
 from flask_sqlalchemy import SQLAlchemy
 import os
@@ -25,9 +26,7 @@ app.config["SECRET_KEY"] = "mysecret"
 ################################
 
 basedir = os.path.abspath(os.path.dirname(__file__))
-app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///" + os.path.join(
-    basedir, "data.sqlite"
-)
+app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///" + os.path.join( basedir, "data.sqlite")
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
 db = SQLAlchemy(app)
@@ -43,6 +42,7 @@ app.register_blueprint(face_app)
 app.register_blueprint(news)
 app.register_blueprint(drumkit)
 app.register_blueprint(ml)
+app.register_blueprint(simon)
 
 
 #####################################

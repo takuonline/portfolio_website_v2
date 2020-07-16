@@ -244,6 +244,12 @@
             border: 1px solid blueviolet;
 
         }
+        &--front-5 {
+            background-image: linear-gradient(#8d2de265,
+                    #4b00e06b), url(../static/images/simon-game.jfif);
+            border: 1px solid blueviolet;
+
+        }
 
         &--back {
             transform: rotateY(-180deg);
@@ -253,15 +259,15 @@
                         #4b00e0);
             }
 
-            &-2 {
-                background-image: linear-gradient(#8d2de2,
-                        #4b00e0);
-            }
+            // &-2 {
+            //     background-image: linear-gradient(#8d2de2,
+            //             #4b00e0);
+            // }
 
-            &-3 {
-                background-image: linear-gradient(#8d2de2,
-                        #4b00e0);
-            }
+            // &-3 {
+            //     background-image: linear-gradient(#8d2de2,
+            //             #4b00e0);
+            // }
         }
 
         &-btn {
@@ -341,6 +347,6 @@
 
 .mycards{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }

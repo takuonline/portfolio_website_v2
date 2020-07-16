@@ -79,12 +79,11 @@
         @include res(phone) {
             top: -31vh;
             left: 7rem;
-            display: none;
+            
         }
 
         &:hover {
             transform: translate(8rem, 5rem);
-
         }
 
     }
@@ -99,6 +98,10 @@
         top: 199vh;
         left: -12%;
         transition: 5s ease-out;
+
+        @include res(phone){
+            display: none;
+        }
 
         &:hover {
             transform: translate(8rem, 5rem);

@@ -12,12 +12,13 @@
       <p class="lead namebox__greet">Welcome to my site!</p>
       <hr class="my-4">
 
-      <p class="namebox__description">Apart from designing this website you can check out my other projects below. <br>
+      <p class="namebox__description">Apart from designing this website you can check out my other projects below.
+         <br>
         If you like anything on my site, just want to say hi, or want to offer some advice you are free to
         hit me up anytime</p>
 
 
-      <a href="{{url_for("core.index")}}" class="namebox__blog-btn">My blog →</a>
+      <a href="./static/cv/Takudzwa Makusha CV.pdf" class="namebox__blog-btn">Download CV →</a>
       <!-- <a class="btn btn-primary btn-lg border border-success shadow" href="#" target="about-sect" role="button">A
       little about me</a> -->
     </div>
@@ -155,6 +156,36 @@
         </div>
 
       </div>
+
+
+      <div class="card">
+
+        <div class="card__side card__side--front-5 card__side--front">
+          <h4 class="card__header">
+            <span class="card__heading-span--1 card__heading-span">Simon Game</span>
+          </h4>
+        </div>
+
+        <div class="card__side card__side--back card__side--back-1">
+          <div class="card__cta">
+            <p class="card__side-description">The game creates a series of tones and lights and requires a
+               user to repeat the sequence. 
+               If the user succeeds, the series becomes progressively longer and more complex.
+                Once the user fails, the game is over. </p>
+          </div>
+          <a href="{{url_for("simon_game.simon_app")}}">
+            <div class="card__side-btn">
+              Play!!
+            </div>
+          </a>
+        </div>
+
+      </div>
+
+
+
+
+
 
     </div>
 
