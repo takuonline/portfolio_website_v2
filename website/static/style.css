@@ -90,7 +90,7 @@ body {
       margin-right: 0; } }
   .about__header {
     padding-bottom: 5rem;
-    color: #10ac10;
+    color: #15ad15;
     margin-bottom: 2rem;
     font-size: 3.7rem; }
     @media (max-width: 56.25em) {
@@ -102,6 +102,9 @@ body {
         margin: 0; } }
   .about__profile {
     margin-bottom: 12rem; }
+    @media (max-width: 26.5em) {
+      .about__profile {
+        margin-bottom: 0; } }
     .about__profile--img {
       width: 23%;
       border-radius: .2rem;
@@ -280,10 +283,13 @@ body {
       font-weight: 600; }
       @media (max-width: 56.25em) {
         .about__design--header {
-          color: green;
+          color: #15ad15;
           font-size: 1.7rem;
           margin-bottom: 5rem;
           margin-top: 7rem; } }
+      @media (max-width: 26.5em) {
+        .about__design--header {
+          margin-bottom: 2rem; } }
     .about__design--img {
       height: 40%;
       width: 70%;
@@ -1555,13 +1561,40 @@ body {
 .contact-page {
   margin-top: 9rem; }
 
-.contact-footer__text {
-  text-align: center;
-  background-color: #1b0431;
-  padding: 2rem;
-  box-shadow: 0 .7rem 2rem grey;
-  display: block;
-  color: white; }
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
+  .contact__item {
+    width: 40%; }
+    @media (max-width: 56.25em) {
+      .contact__item {
+        width: 50%; } }
+    @media (max-width: 26.5em) {
+      .contact__item {
+        width: 45%; } }
+    .contact__item > a > img {
+      width: 100%; }
+
+.contact-footer {
+  width: 100%; }
+  .contact-footer__text {
+    text-align: center;
+    background-color: #1b0431;
+    padding: 2rem;
+    box-shadow: 0 .7rem 2rem grey;
+    display: block;
+    color: white; }
+
+.contact-container {
+  margin: 0 10rem; }
+  @media (max-width: 56.25em) {
+    .contact-container {
+      margin: 0 5rem; } }
+  @media (max-width: 26.5em) {
+    .contact-container {
+      margin: 0 1.5rem; } }
 
 #level-title {
   font-family: 'Press Start 2P', cursive;

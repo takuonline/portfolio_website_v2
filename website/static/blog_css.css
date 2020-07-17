@@ -1,25 +1,9 @@
-/* .blog-nav{
-    display: inline-block;
-    list-style-type: none;
-    overflow: hidden;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    position: relative;
-#ff9234
-  } */
-
-
-
-  
-  body  {
-  background-image: linear-gradient( 
-    #a1ffce
-    ,
-    #b9ca35);
+body {
+  background-image: linear-gradient(#a1ffce,
+      #b9ca35);
   background-repeat: no-repeat;
   min-height: 100vh;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 
@@ -30,37 +14,54 @@
   left: 0;
   top: 0rem;
   text-align: left;
-  font-size: 2rem ;
+  font-size: 2rem;
 
-/*   
-  &:hover {
-      border-bottom: 2px solid #00B300;
-      text-decoration: none;
 
-      &:active {
-          color: rgb(37, 37, 206);
-      }
-  } */
 }
 
-.nav-hover:hover{
+.nav-hover:hover {
   border-bottom: 2px solid #00B300;
   text-decoration: none;
 }
 
-.home-btn:hover{
+.home-btn:hover {
   text-decoration: none;
 }
 
+.list-instructions {
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-left: 9rem;
+}
 
-.myjumbo{
-  background-image: linear-gradient( to right top,
-    #00c3ffce
-,
-    #ffff1cb9
-  );
+@media (max-width: 952px) {
+
+  body {
+
+    font-size: 1rem;
+  }
+
+  .list-instructions {
+
+    margin-left: 0rem;
+  }
+}
+
+/* @media (max-width: 952px){
+    
+  body  {
+    
+    font-size: 1rem;
+  }
+    
+ 
+  } */
+
+
+.myjumbo {
+  background-image: linear-gradient(to right top, #00c3ffce, #ffff1cb9);
   color: black;
-  height: 20rem;
+  min-height: 20rem;
   border-radius: .7rem;
   box-shadow: 0 1rem 3rem #777;
   overflow: hidden;
@@ -68,22 +69,29 @@
   margin-top: 2rem;
   position: relative;
   font-size: 2rem;
+  text-align: left;
 
 }
 
-.jumbo-text{
+
+@media (max-width: 425px) {
+
+  .myjumbo {
+    padding: 1rem;
+  }
+
+}
+
+.jumbo-text {
   /* color: #35d0ba; */
   margin-top: 3rem;
 }
 
-.blog-text{
-  background-image: linear-gradient( to left bottom,
-  #00c3ffce
-,
-  #ffff1cb9
-);
-font-size: 2rem;
-  color: black;
+.blog-text {
+  background-image: linear-gradient(to left bottom,
+      #00c3ffce,
+      #ffff1cb9);
+  /* color: black; */
   height: 100%;
   border-radius: .2rem;
   box-shadow: 0 1rem 3rem #777;
@@ -91,103 +99,104 @@ font-size: 2rem;
   margin-bottom: 3rem;
   margin-top: 2rem;
   min-height: 20rem;
-  padding:4rem;
+  padding: 4rem;
+  /* font-weight: 200; */
+  color: #222;
 
 }
 
-/* .blog-div{
-  display: flex;
-  justify-self: stretch;
-  flex-wrap: wrap;
-} */
-/* .pagination{
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-} */
-.user-post-pic{
+.user-post-pic {
   width: 100%;
-  max-width: 40% !important;
+  /* max-width: 40% !important; */
   margin-right: 3rem;
   float: left;
 }
-.user-post-header{
+
+
+
+
+.user-post-header {
   width: 75%;
   margin-right: 0;
 }
 
-.user-post-text{
+.user-post-text {
   width: 75%;
 
 }
 
-.user-post-profile{
+.user-post-profile {
   width: max-content;
 }
 
-.pic-and-pro{
+.pic-and-pro {
   max-width: fit-content;
   max-height: fit-content;
   display: flex;
-justify-content: center;
+  justify-content: center;
 }
 
-.blog-post{
-margin-top: 3rem;
-padding: 2rem;
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-height: fit-content;
-font-size: 90%;
-} 
+.blog-post {
+  margin-top: 3rem;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: fit-content;
+  font-size: 90%;
+}
 
 
 
 
-.update-post{
+.update-post {
   /* background-color:purple ; */
   border-radius: .4rem;
   display: inline-block;
 
 }
 
-.mycard{
+.mycard {
   /* border: .03rem solid black ; */
-  width:90%;
- 
+  width: 90%;
+
   box-shadow: 0 1rem 2rem #777;
-  border-radius: 2rem;
+  border-radius: 1.5rem;
   margin: 3rem auto;
   padding: 2rem;
-  background-image: linear-gradient( to left bottom,
-    #00c3ffce
-,
-    #ffff1cb9
-  );
+  background-image: linear-gradient(to left bottom,
+      #00c3ffce,
+      #ffff1cb9);
 
 }
 
-.myform-input{
- min-height: 50rem;
- height: 100%;
+@media (max-width: 425px) {
+
+  .mycard {
+    padding: .5rem;
+  }
+
+
 }
 
-.register-form{
+.myform-input {
+  min-height: 50rem;
+  height: 100%;
+}
+
+.register-form {
   margin: 7rem auto;
   width: 100%;
   box-shadow: 0 1rem 2rem #777;
   border-radius: 2rem;
   padding: 5rem;
-  background-image: linear-gradient( to right top,
-    #00c3ffce
-,
-    #ffff1cb9
-  );
+  background-image: linear-gradient(to right top,
+      #00c3ffce,
+      #ffff1cb9);
   font-size: 2rem;
 }
 
-.login-form{
+.login-form {
   margin: 5rem auto;
   width: 30%;
   box-shadow: 0 1rem 2rem #777;
@@ -198,6 +207,56 @@ font-size: 90%;
   font-size: 2rem;
 }
 
-.account-form{
+.account-form {
   margin: 5% auto;
+}
+
+@media (max-width: 425px) {
+
+  .blog-text {
+    padding: 2rem;
+    font-size: 1rem;
+    letter-spacing: .3px;
+  }
+
+
+  .pic-and-pro {
+    max-width: fit-content;
+    max-height: fit-content;
+    display: flex;
+    justify-content: center;
+    /* width: 50%; */
+    font-size: 50%;
+    height: 48%;
+    flex-direction: column;
+    padding: 8px;
+  }
+
+  .user-post-pic {
+    width: 100%;
+    max-width: 70% !important;
+    margin:0 auto;
+    float: none;
+
+  }
+
+  .user-post-header {
+    width: 100%;
+    margin-right: 0;
+
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-top: 1rem;
+  }
+  .user-post-text {
+    width: 100%;
+  
+  }
+
+
+.user-post-profile {
+    width: auto;
+
+}
 }

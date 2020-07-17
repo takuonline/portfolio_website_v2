@@ -4,6 +4,8 @@ from website import db
 from website.blog.models import User, BlogPost
 from website.blog.users.forms import RegistrationForm, LoginForm, UpdateUserForm
 from website.blog.users.picture_handler import add_profile_pic
+import random 
+import os
 
 users = Blueprint("users", __name__)
 
@@ -78,6 +80,9 @@ def register():
             email=form.email.data,
             username=form.username.data,
             password=form.password.data,
+            image=pick_random_image()
+
+
         )
 
         db.session.add(user)
@@ -93,3 +98,15 @@ def register():
 def logout():
     logout_user()
     return redirect(url_for("core.index"))
+
+
+def pick_random_image():
+
+       
+    dirname = os.path.dirname(__file__)
+    website = os.path.join(dirname, "..","..")
+    path_robots = os.path.join(website,"static" ,"robots")
+    files=os.listdir(path_robots)
+    choice=random.choice(files)
+    return choice
+

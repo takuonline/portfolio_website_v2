@@ -18,7 +18,7 @@
 
     &__header {
         padding-bottom: 5rem;
-        color: #10ac10;
+        color: rgb(21, 173, 21);
         margin-bottom: 2rem;
         font-size: 3.7rem;
 
@@ -35,6 +35,10 @@
 
     &__profile {
         margin-bottom: 12rem;
+        @include res(phone) {
+            margin-bottom: 0;
+        }
+
 
         &--img {
             width: 23%;
@@ -297,10 +301,13 @@
 
 
             @include res(tab-port) {
-                color: green;
+                color: rgb(21, 173, 21);
                 font-size: 1.7rem;
                 margin-bottom: 5rem;
                 margin-top: 7rem;
+            }
+            @include res(phone) {
+                margin-bottom: 2rem;
             }
 
         }
