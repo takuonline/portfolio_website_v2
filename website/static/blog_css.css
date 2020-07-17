@@ -78,6 +78,12 @@ body {
 
   .myjumbo {
     padding: 1rem;
+    box-shadow: 0 0.2rem 0.2rem #777;
+  }
+
+  .jumbo-display-4{
+    font-size: 2.5rem;
+    font-weight: 300;
   }
 
 }
@@ -115,7 +121,7 @@ body {
 
 
 .user-post-header {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .user-post-text {
@@ -177,10 +183,13 @@ body {
 
   min-width: 17vw;
 }
+
 @media (max-width: 425px) {
 
   .mycard {
     padding: .5rem;
+    box-shadow: 0 0.2rem 0.2rem #777;
+    width: 100%;
   }
 
 
@@ -229,10 +238,23 @@ body {
   min-width: 17vw;
 }
 
+.account-name-of-user{
+  color: rgb(3, 70, 70);
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.create-post-text{
+  padding: 4rem;
+  background-image: linear-gradient(to left bottom, #00c3ffce, #ffff1cb9);
+  color: #222;
+  min-height: 45rem;
+  font-size: 2rem;
+}
 @media (max-width: 425px) {
 
   .blog-text {
-    padding: 2rem;
+    padding: 2rem 1rem;
+    
     font-size: 1rem;
     letter-spacing: .3px;
   }
@@ -253,7 +275,7 @@ body {
   .user-post-pic {
     width: 100%;
     max-width: 70% !important;
-    margin:0 auto;
+    margin: 0 auto;
     float: none;
 
   }
@@ -267,14 +289,62 @@ body {
     line-height: 1.2;
     margin-top: 1rem;
   }
+
   .user-post-text {
     width: 100%;
-  
+
   }
 
 
-.user-post-profile {
+  .user-post-profile {
     width: auto;
 
+  }
+
+  .login-form {
+    margin: 5rem auto;
+    width: 30%;
+    border-radius: 0;
+    padding: 2rem;
+    text-align: left;
+    min-width: max-content;
+    font-size: 1rem;
+    box-shadow:none;
+  }
+  .w-50 {
+    width: 100%!important;
+}
+.w-75 {
+  width: 100%!important;
+}
+
+.register-form {
+  margin: 7rem auto;
+
+  box-shadow: none;
+  border-radius: 0;
+  padding: 2rem;
+  background-image: none;
+  font-size: 1rem;
+}
+
+.need-validation{
+  margin-bottom: 2rem;
+}
+
+.create-post-container{
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+.create-post-text{
+  padding: .5rem;
+  background-image: linear-gradient(to left bottom, #00c3ffce, #ffff1cb9);
+  color: #222;
+  min-height: 25rem;
+}
+
+.create-post-btn{
+  padding: .5rem 1.3rem;
 }
 }

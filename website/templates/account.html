@@ -3,7 +3,7 @@
 {%block content%}
 <div class="myjumbo pt-5">
   <div align="center">
-    <h1>Welcome to the page for {{current_user.username}}</h1>
+    <h1>Welcome to your home page <span class="account-name-of-user">{{current_user.username}}</span></h1>
 
     <img src="{{url_for("static",filename="profile_pics/"+current_user.profile_image)}}" alt="Userprofile pic">
 
