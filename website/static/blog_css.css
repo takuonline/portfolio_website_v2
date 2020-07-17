@@ -106,27 +106,25 @@ body {
 }
 
 .user-post-pic {
-  width: 100%;
-  /* max-width: 40% !important; */
+  width: auto;
   margin-right: 3rem;
-  float: left;
+  height: auto;
 }
 
 
 
 
 .user-post-header {
-  width: 75%;
-  margin-right: 0;
+    margin-right: 0;
 }
 
 .user-post-text {
-  width: 75%;
+  width: 100%;
 
 }
 
 .user-post-profile {
-  width: max-content;
+  /* min-width: fit-content; */
 }
 
 .pic-and-pro {
@@ -170,6 +168,15 @@ body {
 
 }
 
+.img-thumbnail {
+  padding: .25rem;
+  background-color: transparent;
+  border: none;
+  border-radius: 1rem;
+  max-width: 100%;
+
+  min-width: 17vw;
+}
 @media (max-width: 425px) {
 
   .mycard {
@@ -209,6 +216,17 @@ body {
 
 .account-form {
   margin: 5% auto;
+}
+
+.img-thumbnail {
+  padding: .25rem;
+  background-color: transparent;
+  /* border: 7px solid #111; */
+  border-radius: 1rem;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  min-width: 17vw;
 }
 
 @media (max-width: 425px) {

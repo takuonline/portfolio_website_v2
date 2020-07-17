@@ -17,9 +17,16 @@ function nextSequency(){
 } 
 
 
+$(".game-btn").on("click", function(){
+    if (!started){
+        setTimeout(nextSequency,500);
+          started=true
 
+          $(".game-btn").addClass("off")
+          }
+})
 
-$(".simon-btn").on("click", function (e) {
+$(".simon-btn").on("click", function () {
  var userChosenColor = $(this).attr("id");
  userClickedPattern.push(userChosenColor);
  playSound(userChosenColor);
@@ -53,7 +60,7 @@ function animatePress(currentColor){
 
 
 
-$(document).on('keypress',function(e) {
+$(document).on('keypress',function() {
   if (!started){
     setTimeout(nextSequency,500);
       started=true
@@ -94,5 +101,6 @@ userClickedPattern =[];
 
 level = 0;
 started=false
-
+$(".game-btn").removeClass("off")
+$(".game-btn").html("Play again?")
 }
